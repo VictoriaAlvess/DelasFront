@@ -17,8 +17,18 @@
     margin: auto;
     padding: 35px 0;
     display: flex;
+    justify-content: space-around;
+}
+
+.navLeft{
+  margin-right: auto;
     align-items: left;
     justify-content: left;
+}
+
+.navRight{
+    align-items: right;
+    justify-content: right;
 }
 
 .loginRight{
@@ -68,7 +78,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    text-align: left;
+    text-align: justify;
     color: #fff;
 }
 
@@ -97,7 +107,7 @@ button {
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid rgb(131, 84, 240);
+    border: 2px solid purple;
     background: transparent;
     color: #fff;
     cursor: pointer;
@@ -118,10 +128,12 @@ span {
 }
 
 button:hover span {
+  
     width: 100%;
 }
 
 button:hover {
+  background-color: purple;
     border: none;
 }
 
