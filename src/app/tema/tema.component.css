@@ -1,0 +1,5 @@
+.cor{
+    background: rgb(221,64,96);
+    background: radial-gradient(circle, rgba(247,110,129,0.4206057422969187) 0%, rgba(245,178,105,0.47942927170868344) 100%);
+    background: linear-gradient(90deg, rgba(221,64,96,1) 0%, rgba(240,110,110,1) 0%, rgba(235,181,105,1.) 100%);
+}

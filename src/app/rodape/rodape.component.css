@@ -1,0 +1,28 @@
+ul.social-network{
+    list-style: none;
+    padding: 0;
+}
+
+ul.social-network li{
+display: inline; /* p/ deixar icones rodapé alinhado - um ao lado do outro */
+margin: 0;
+padding: 5px; /* espaçamento entre os ícones */
+}
+
+.fa{
+font-size: 35pt; /* edição ícones redes sociais */
+color:black;
+padding: 10px;
+}
+
+.fa-twitter-square:hover{ /* muda a cor dos ícones das redes quando passa o mouse por cima */
+    color: #00acee ;
+}
+
+.fa-instagram:hover{ /* muda a cor dos ícones das redes quando passa o mouse por cima */
+color: rgb(233, 62, 91);
+}
+
+.fa-github:hover{ /* muda a cor dos ícones das redes quando passa o mouse por cima */
+    color:silver;
+}
