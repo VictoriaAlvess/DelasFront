@@ -39,7 +39,7 @@ body{
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #7d2ae8;
+  background: hsl(266, 85%, 63%);
   opacity: 0.5;
   z-index: 100;
 }
