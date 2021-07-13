@@ -13,6 +13,7 @@ import { LogarComponent } from './logar/logar.component';
 import { ContatoComponent } from './contato/contato.component';
 import { FeedComponent } from './feed/feed.component';
 import { TemaComponent } from './tema/tema.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { TemaComponent } from './tema/tema.component';
     LogarComponent,
     ContatoComponent,
     FeedComponent,
-    TemaComponent
+    TemaComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,

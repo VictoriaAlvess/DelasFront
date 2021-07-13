@@ -1,99 +1,55 @@
-<div class="container-fluid">
+<!--INICIO NAV BAR FEED-->
+<!--FIM NAV BAR FEED-->
 
-    <div class="row cor d-flex align-items-center bg-dark"> 
-        <div class="col-md-6">
-  
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6 text-light">
-                    <h1 class="fs-54">Seja Bem vinde</h1> <!-- fs => inicio.component.css-->
-                    <h5 class="fs-18">Esse espaço é nosso!</h5>
-                    <h5 class="fs-18">Bora dissertar?</h5>
-                </div>
-            </div>
-  
-            <!-- Botão de nova postagem -->
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6 mt-3"> <!--gatilo do botão modal-->
-                    <button type="button" class="btn btn-outline-light me-2 mb-2" data-bs-toggle="modal" 
-                    data-bs-target="#novaPostagem">Nova Postagem</button>
-                   <a class="btn btn-outline-light mb-2" href="#postagens">Ver Postagens</a>
-                </div>
-            </div>
-  
-        </div>
-  
-        <div class="col-md-6 d-flex justify-content-center">
-            <img src="https://i.imgur.com/IyK6wgn.png" alt="" width="500px" height="500px" class="img-fluid">
-        </div>
-    </div>
-  </div>
-  
-  <div class="container my-4 mb-5 mt-5" id="postagens">
-    <!-- menu pág inicial -->
-    <nav> <!-- d-flex justify-content-center para deixar menu centralizado -->
-        <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
-  
-          <button class="nav-link text-secondary font-weight-bold" 
-          id="nav-minhasPostagens-tab" data-bs-toggle="tab" data-bs-target="#nav-minhasPostagens" type="button" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas Postagens</button>
-  
-          <button class="nav-link active text-secondary font-weight-bold" id="nav-todasPostagens-tab" data-bs-toggle="tab" data-bs-target="#nav-todasPostagens" type="button" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as Postagens</button>
-  
-          <button class="nav-link text-secondary font-weight-bold" 
-          id="nav-postagemTema-tab" data-bs-toggle="tab" data-bs-target="#nav-postagemTema" type="button" role="tab" aria-controls="nav-postagemTema" aria-selected="true">Postagens por Tema</button>
-        </div>  
-      </nav>
-  
-      <div class="tab-content" id="nav-tabContent">
-  
-        <div class="tab-pane fade" id="nav-minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
-          Minhas Postagens
-        </div>
-  
-        <div class="tab-pane fade show active" id="nav-todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
-            Todas Postagens
-        </div>
-  
-        <div class="tab-pane fade" id="nav-postagemTema" role="tabpanel" 
-        aria-labelledby="nav-postagemTema-tab">
-            Postagens por Tema
-        </div>
-  
+
+<!-- INICIO FEED -->
+<div class="container mt-4 mb-5">
+  <div class="d-flex justify-content-center row">
+      <div class="col-md-8">
+          <div class="feed p-2">
+              <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white border">
+                  <div class="feed-text px-2">
+                    <!--INSERIR MODAL PEDINDO DADOS DA POSTAGEM-->
+                    <!--Postagens poderão ser feitas com texto e/ou foto ou juntos-->
+                    <!--Categorias vão ser selecionadas quando ela for postar-->
+                      <h6 class="text-black-50 mt-2">Ei, mulher faça aqui seu post de divulgação</h6>
+                  </div>
+                  <div class="feed-icon px-2"><i class="fa fa-long-arrow-up text-black-50"></i></div>
+              </div>
+              <div class="bg-white border mt-2">
+                        <div class="d-flex flex-row justify-content-between align-items-center p-2 border-bottom">
+                          <!--Interpolação fotoPerfil e nome user-->
+                            <div class="d-flex flex-row align-items-center feed-text px-2">
+                              <!--Interpolação foto{{usuario.fotoPerfil}} e nome {{usuario.nome}}-->
+                              <img class="rounded-circle" src="fotoPerfil" width="45">
+                              <div class="d-flex flex-column flex-wrap ml-2"><span class="font-weight-bold">nome user</span>
+                              </div>
+                            </div>
+                            <div class="feed-icon px-2"><i class="fa fa-ellipsis-v text-black-50"></i></div>
+                        </div>
+                  <div class="p-2 px-3"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div>
+                  <div class="d-flex justify-content-end socials p-2 py-3"><i class="fa fa-thumbs-up"></i></div>
+              </div>
+              <div class="bg-white border mt-2">
+                  <div>
+                      <div class="d-flex flex-row justify-content-between align-items-center p-2 border-bottom">
+                        <!--Interpolação fotoPerfil e nome user-->
+                          <div class="d-flex flex-row align-items-center feed-text px-2">
+                            <img class="rounded-circle" src="fotoPerfil" width="45">
+                            <div class="d-flex flex-column flex-wrap ml-2"><span class="font-weight-bold">nome user</span>
+                            </div>
+                          </div>
+                          <div class="feed-icon px-2"><i class="fa fa-ellipsis-v text-black-50"></i></div>
+                      </div>
+                  </div>
+                  <div class="feed-image p-2 px-3"><img class="img-fluid img-responsive" src="fotoPost"> 
+                  FOTO DO POST SERÁ AQUI 
+                  </div>
+                  <div class="d-flex justify-content-end socials p-2 py-3"><i class="fa fa-thumbs-up"></i></div>
+              </div>
+          </div>
       </div>
   </div>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="novaPostagem" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="TituloModalCentralizado">Nova Postagem</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        
-        <div class="modal-body"> 
-            <div class="form-group">
-                <label for="titulo">Título</label>
-                <input type="text" class="form-control" name="titulo" id="titulo" placeholder="Digite o título da postagem">
-              </div>
-                              <!-- conteúdo minha modal-->
-              <div class="form-group">
-                <label for="texto">Texto</label>
-                <textarea class="form-control" name="texto" id="texto" cols="75" rows="10" placeholder="Digite o conteúdo da sua postagem"></textarea>
-              </div>
-      
-              <div class="form-group">
-                <label for="tema">Escolha um tema ou <a data-bs-dismiss="modal" routerLink='/tema'>cadastre um novo</a>:
-                </label>
-                <select name="tema" id="tema" class="form-control">
-                    <option value="">Temas</option>
-                </select>
-              </div>
-      
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-outline-success">Publicar</button>
-            </div>
-          </div>
-        </div>
-      </div> 
+</div>
+
+<!-- FIM FEED -->
