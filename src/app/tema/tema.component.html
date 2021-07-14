@@ -9,8 +9,8 @@ SOMENTE ELE PODE ADICIONAR/EDITAR/DELETAR UMA CATEGORIA(TEMA) PARA A EMPREENDEDO
         <i class="fa fa-angle-double-left" aria-hidden="true"></i> feed
       </a>
 
-      <h1 class="fs-54 text-center">Temas</h1>
-      <h5 class="fs-18 text-center">Veja aqui todos os temas cadastrados ou cadastre um novo:</h5>
+      <h1 class="fs-54 text-center">Categorias</h1>
+      <h5 class="fs-18 text-center">Veja aqui todas as categorias ou cadastre uma nova:</h5>
 
       <div class="row d-flex justify-content-center mt-4 mb-5">
         <div class="col-md-3">
@@ -55,8 +55,8 @@ SOMENTE ELE PODE ADICIONAR/EDITAR/DELETAR UMA CATEGORIA(TEMA) PARA A EMPREENDEDO
       <th>{{temas.id}}</th>
       <td>{{temas.categorias}}</td>
       <td class="d-flex justify-content-end">
-        <button class="btn btn-outline-info me-2" [routerLink]="['/tema-edit', temas.id]"> ✏️</button>
-        <button class="btn btn-outline-danger" [routerLink]="['/tema-', temas.id]">❌</button>
+        <button class="btn btn-outline-info me-2" [routerLink]="['/tema-edit', temas.id]">Editar</button>
+        <button class="btn btn-outline-danger" [routerLink]="['/tema-delete', temas.id]">Apagar</button>
       </td>
     </tr>
     
