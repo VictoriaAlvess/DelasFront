@@ -15,12 +15,22 @@ export class TemaService {
     headers: new HttpHeaders().set('Authorization', environment.token)
   }
 
+  refreshToken() {
+    this.token = {
+      headers: new HttpHeaders().set('Authorization',environment.token)
+    }
+  }
+
   getAllTema(): Observable<Temas[]>{
     return this.http.get<Temas[]>('http://localhost:8080/temas', this.token)
 
   }
   postTema(temas: Temas): Observable<Temas>{
     return this.http.post<Temas>('http://localhost:8080/temas', temas, this.token)
+  }
+
+  getByIdTemas(id: number): Observable<Temas>{
+    return this.http.get<Temas>(`http://localhost:8080/temas/${id}`, this.token)
   }
 
 

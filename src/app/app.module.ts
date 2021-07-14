@@ -27,7 +27,7 @@ import { PerfilComponent } from './perfil/perfil.component';
     ContatoComponent,
     FeedComponent,
     TemaComponent,
-    PerfilComponent
+    PerfilComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +11,14 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  ngOnInit() {
+
+
   ngOnInit(){
 
     window.scroll(0,0)
   }
 
+
+  }
 }
