@@ -11,11 +11,11 @@ padding: 5px; /* espaçamento entre os ícones */
 
 .fa{
 font-size: 35pt; /* edição ícones redes sociais */
-color:black;
+color:rgb(199, 174, 174);
 padding: 10px;
 }
 
-.fa-twitter-square:hover{ /* muda a cor dos ícones das redes quando passa o mouse por cima */
+.fa-twitter:hover{ /* muda a cor dos ícones das redes quando passa o mouse por cima */
     color: #00acee ;
 }
 
@@ -26,3 +26,56 @@ color: rgb(233, 62, 91);
 .fa-github:hover{ /* muda a cor dos ícones das redes quando passa o mouse por cima */
     color:silver;
 }
+
+.tam{
+
+    font-size: 35pt;
+    padding: 5px;
+    list-style: none;
+    color: black;
+}
+
+/* envie seu email*/ 
+.borda-cima{
+   border-top: 1.5px solid rgb(175, 173, 175);
+}
+
+
+  
+  #button-addon1 {
+    color: #ffc371;
+  }
+  
+  i {
+    color: #ffc371;
+  }
+  
+  .form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .form-control.shadow-0:focus {
+    box-shadow: none;
+  }
+
+  .cor-roxa{
+      color: rgb(152, 59, 206);
+    }
+  
+    .mn{
+        margin-top: -25px;
+    }
+
+    .email{
+
+        width: 20pt;
+        height: 20pt;
+    }
+
+
+
+
+
+
