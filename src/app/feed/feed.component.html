@@ -1,5 +1,5 @@
-<!-- navbar lateral --> 
-<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>  
+<!-- navbar lateral -->
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 <div class="sidebar">
    <div class="logo-details">
       <img src="../../assets/img/logo.png" alt="" width="70px" height="70px">
@@ -47,7 +47,10 @@
          <i class="profile"></i>
 
 
+
+
      
+
 
       </li>
    </ul>
@@ -56,104 +59,50 @@
 <!-- navbar lateral -->
 
 <!-- cx de post -->
-
 <div class="d-flex justify-content-center p-0 m-5">
    <div class="d-flex justify-content-center p-0 m-0">
-      <div class="formPost container p-0 m-0">
+      <div class="formPost  container p-0 m-0">
          <div class="row justify-content-center mt-2 p-0 pb-3" id="bloco">
+
             <div class="col-md-11 p-0 m-0">
-
-
-               <div class="form-group p-0 m-0 col-md-12">
+               <div class="form-group p-0 m-0">
                   <label for="texto"></label>
-                  <textarea [(ngModel)]='postagem.textoPost' name="texto" class="form-control" id="texto" rows="3"
-                     placeholder="Ei, mulher! Divulgue seu trabalho aqui!">
+                  <textarea [(ngModel)]='postagem.textoPost' name="texto" id="texto" class="form-control" rows="3"
+                     placeholder="Ei,mulher divulgue seu trabalho aqui">
                   </textarea>
-
-
-
-
-
-
-                  <div class="form-group mt-2 col-md-12">
-                     <label for="titulo">Link da foto:</label>
-                     <input [(ngModel)]='postagem.fotoPost' type="text" class="form-control" id="fotoPost">
-                  </div>
-
-                  <div class="form-group mt-2">
-                     <label for="tema">Escolha uma categoria
-                        <a data-bs-dismiss="modal" routerLink='/tema'>Cadastre um novo</a>: </label>
-                     <select name="tema" id="tema" class="form-control" [(ngModel)]='idTema' (change)='findByIdTemas()'>
-                        <option *ngFor='let tema of listaTemas' value="{{tema.id}}"> {{tema.categorias}}</option>
-                     </select>
-                     <div>
-                        <button type="button" class="btn btn-outline-danger me-4 my-2">Cancelar</button>
-                        <button type="button" class="btn btn-outline-success" (click)='publicar()'>Postar</button>
-                     </div>
-                  </div>
-
-
-               </div>
-
-            </div>
-         </div>
-      </div>
-
-   </div>
-=======
-<div class="formPost  d-flex justify-content-center">
-   <div class="container">
-      <div class="row justify-content-center mt-4 p-4" id="bloco">
-         <div class="col-md-6">
-
-
-            <div class="d-flex justify-content-center p-0 m-5">
-               <div class="d-flex justify-content-center p-0 m-5">
-                  <div class="formPost container p-0 m-0">
-                     <div class="row justify-content-center mt-2 p-0 pb-3" id="bloco">
-                        <div class="col-md-11 p-0 m-0">
-                           <div class="form-group p-0 m-0">
-                              <label for="texto"></label>
-                              <textarea [(ngModel)]='postagem.textoPost' name="texto" id="texto" class="form-control"
-                                 rows="3" placeholder=" Ei, mulher! Divulgue seu trabalho aqui!"></textarea>
-
-                                 <div class="row justify-content-center mt-2 p-0 pb-3" id="bloco">
-                                    <div class="col-md-11 p-0 m-0">
-                              <div class="form-group mt-2">
-                                 <label for="titulo">Link da foto:</label>
-                                 <input [(ngModel)]='postagem.fotoPost' type="text" class="form-control" id="fotoPost">
-                              </div>
-
-                              <div class="row justify-content-center mt-2 p-0 pb-3" id="bloco">
-                                 <div class="col-md-11 p-0 m-0">
-                              <div class="form-group mt-2">
-                                 <label for="tema">Escolha uma categoria
-                                    <a data-bs-dismiss="modal" routerLink='/tema'>Cadastre um novo</a>: </label>
-                                 <select name="tema" id="tema" class="form-control" [(ngModel)]='idTema'
-                                    (change)='findByIdTemas()'>
-                                    <option *ngFor='let tema of listaTemas' value="{{tema.id}}"> {{tema.categorias}}
-                                    </option>
-                                 </select>
-                                 <div>
-                                    <button type="button" class="btn btn-outline-danger me-4 my-2">Cancelar</button>
-                                    <button type="button" class="btn btn-outline-success"
-                                       (click)='publicar()'>Postar</button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
                </div>
             </div>
+
+            <div class="col-md-11 p-0 m-0">
+               <div class="form-group mt-2">
+                  <label for="titulo">Link da foto:</label>
+                  <input [(ngModel)]='postagem.fotoPost' type="text" class="form-control" id="fotoPost">
+               </div>
+            </div>
+
+
+            <div class="col-md-11 p-0 m-0">
+               <div class="form-group mt-2">
+                  <label for="tema">Escolha uma categoria
+                     <a data-bs-dismiss="modal" routerLink='/tema'>Cadastre um novo</a>: </label>
+                  <select name="tema" id="tema" class="form-control" [(ngModel)]='idTema' (change)='findByIdTemas()'>
+                     <option *ngFor='let tema of listaTemas' value="{{tema.id}}"> {{tema.categorias}}
+                     </option>
+                  </select>
+               </div>
+            </div>
+
+            <div class="col-md-11 p-0 m-0">
+               <button type="button" class="btn btn-outline-danger me-4 my-2">Cancelar</button>
+               <button type="button" class="btn btn-outline-success" (click)='publicar()'>Postar</button>
+            </div>
+
          </div>
-      </div>
+
       </div>
    </div>
-
 
 </div>
-
 <!-- cx de post -->
 
 <!-- fotoPerfil user -->
@@ -163,9 +112,6 @@
       <div class="col-md-12">
          <div id="content" class="content content-full-width">
 
-            <!---->
-
-            <!---->
 
             <!-- begin profile-content -->
             <div class="profile-content">
@@ -179,24 +125,12 @@
                            <!-- begin timeline-body -->
                            <div class="timeline-body">
                               <div class="timeline-header">
-                   <span class="userimage"><img src="{{usuario.fotoPerfil}}"
-                                       alt=""></span>
-                                 <span class="username"><a href="javascript:;">{{usuario.usuario}}</a> <small></small></span>
+                                 <span class="userimage"><img src="" alt="">{{usuario.fotoPerfil}}</span>
+                                 <span class="username"><a href="">{{usuario.usuario}}</a> <small></small></span>
                               </div>
                               <div class="timeline-content">
                                  <p>
-                                    {{postagem.textoPost}} 
-
-                                 <span class="userimage"><img src="https://bootdey.com/img/Content/avatar/avatar3.png"
-                                       alt=""></span>
-                                 <span class="username"><a href="javascript:;">Nome user</a> <small></small></span>
-                              </div>
-                              <div class="timeline-content">
-                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus turpis quis
-                                    tincidunt luctus.
-                                    Nam sagittis dui in nunc consequat, in imperdiet nunc sagittis.
-
+                                    {{postagem.textoPost}}
                                  </p>
                               </div>
                               <div class="timeline-likes">
@@ -210,8 +144,13 @@
                                  </div>
                               </div>
                               <div class="timeline-footer">
-                                 <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                                 <a href="" class="m-r-15 text-inverse-lighter"><i
                                        class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i>Curtir</a>
+                              </div>
+
+                              <div>
+                                 <button type="button" class="btn btn-outline-dark me-4 my-2">Editar </button>
+                                 <button type="button" class="btn btn-outline-dark">Apagar</button>
                               </div>
                            </div>
                      </ul>
