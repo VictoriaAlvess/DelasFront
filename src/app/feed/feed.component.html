@@ -1,7 +1,7 @@
 <!-- navbar lateral --> 
 <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>  
 <div class="sidebar">
-   <div class="logo-details"> feed
+   <div class="logo-details">
       <img src="../../assets/img/logo.png" alt="" width="70px" height="70px">
 
       <!-- logo -->
@@ -25,13 +25,20 @@
 
          <span class="tooltip">Página inicial</span>
       </li>
+
       <li>
-         <a href="#">
-            <i class='bx bx-user'></i>
-            <span class="links_name">Meu Perfil</span>
+
+         <a [routerLink]="['/perfil-edit', id]">
+            <i class='bx bx-user' ></i>
+
+            <span class="links_name" >Meu Perfil</span>
          </a>
+
          <span class="tooltip">Meu Perfil</span>
+
       </li>
+
+
       <li>
 
          <i class="profile">{{usuario.fotoPerfil}}</i>
@@ -40,7 +47,7 @@
          <i class="profile"></i>
 
 
-         <i class='bx bx-log-out' id="log_out"></i>
+     
 
       </li>
    </ul>
