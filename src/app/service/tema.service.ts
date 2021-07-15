@@ -22,15 +22,15 @@ export class TemaService {
   }
 
   getAllTema(): Observable<Temas[]>{
-    return this.http.get<Temas[]>('http://localhost:8080/temas', this.token)
+    return this.http.get<Temas[]>('https://delasbackend.herokuapp.com/temas', this.token)
 
   }
   postTema(temas: Temas): Observable<Temas>{
-    return this.http.post<Temas>('http://localhost:8080/temas', temas, this.token)
+    return this.http.post<Temas>('https://delasbackend.herokuapp.com/temas', temas, this.token)
   }
 
   getByIdTemas(id: number): Observable<Temas>{
-    return this.http.get<Temas>(`http://localhost:8080/temas/${id}`, this.token)
+    return this.http.get<Temas>(`https://delasbackend.herokuapp.com/temas/${id}`, this.token)
   }
 
 
