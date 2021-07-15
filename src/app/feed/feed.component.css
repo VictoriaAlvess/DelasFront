@@ -3,6 +3,10 @@ body{
     background:#eee;
 }
 
+.color{
+    background-color: mediumorchid;
+}
+
 .profile-header {
     position: relative;
     overflow: hidden
@@ -19,6 +23,15 @@ body{
     top: 0;
     bottom: 0
 }
+
+.formPost{
+    max-height: 300px;
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    padding: 50px 50px 50px 50px;
+    box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.2);
+  }
 
 .profile-header .profile-header-cover:before {
     content: '';

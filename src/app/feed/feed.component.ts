@@ -132,7 +132,7 @@ export class FeedComponent implements OnInit {
   }
 
   cancelar(){
-
+    
   }
 
 }
