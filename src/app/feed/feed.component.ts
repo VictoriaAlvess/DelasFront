@@ -39,10 +39,9 @@ export class FeedComponent implements OnInit {
 
   ) { }
 
-  ngOnInit(){
+  ngOnInit() {
 
     window.scroll(0,0)
-
     this.sidebar()
 
     if(environment.token == ''){
@@ -50,11 +49,12 @@ export class FeedComponent implements OnInit {
       this.router.navigate(['/logar'])
     }
 
+    
     this.temaService.refreshToken()
     this.getAllTemas()
     this.getAllPostagens()
     //this.getByIdTemas()
-    console.log(environment)
+    //console.log(environment)
   }
 
   sidebar(){
@@ -84,38 +84,38 @@ export class FeedComponent implements OnInit {
   getAllTemas(){
     this.temaService.getAllTema().subscribe((resp: Temas[]) =>{
       this.listaTemas = resp
-    })
+    });
   }
 
   getAllPostagens(){
     this.postagemService.getAllPostagens().subscribe((resp: Postagem[]) =>{
       this.listaPostagens = resp
-    })
+    });
   }
 
   getByIdTemas(){
     this.temaService.getByIdTemas(this.idTema).subscribe((resp: Temas)=>{
       this.tema = resp
-    })
+    });
   }
 
   getByIdUser(){
     this.authService.getByIdUser(this.idUser).subscribe((resp: Usuario)=>{
       this.usuario = resp
-    })
+    });
   }
 
   findByIdTemas(){
     this.temaService.getByIdTemas(this.idTema).subscribe((resp: Temas)=>{
       this.tema = resp
-    })
+    });
   }
   
 
   findByIdUser(){
     this.authService.getByIdUser(this.idUser).subscribe((resp:Usuario)=>{
       this.usuario = resp
-    })
+    });
   }
 
   publicar(){
