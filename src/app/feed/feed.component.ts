@@ -15,6 +15,11 @@ import { TemaService } from '../service/tema.service';
 })
 export class FeedComponent implements OnInit {
 
+  id = environment.id
+  nome = environment.nome
+  fotoPerfil = environment.fotoPerfil
+   
+
   usuario: Usuario = new Usuario()
   idUser = environment.id
 

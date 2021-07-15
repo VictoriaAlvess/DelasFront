@@ -1,0 +1,121 @@
+<div class="row py-3 px-5 corRoxa">
+    <div class="col-md-12 mx-auto ">
+        <!-- Profile widget -->
+        <div class="bg-white shadow rounded overflow-hidden ">
+            <div class="px-5 pt-0 pb-4 cover ">
+                <div class="media align-items-end profile-head ">
+                    <!--Foto e nome do perfil-->
+                    <div class="profile mr-3"><img src="../../assets/img/vic-foto.jpg" alt="..." width="130" class="rounded mb-2 img-thumbnail "></div>
+                   
+                    <div class="media-body mb-5 text-white">
+                        <h4 class="mt-0 mb-0"></h4>
+                    </div>
+  
+                </div>
+            </div>
+           
+            <div class="px-4 py-3 ">
+                
+                
+                <h5 class="">Meus dados</h5>
+           
+                    
+                    <!--Dados do cadastro inicio--> 
+                    
+                    <div class="signup-form mt-2">
+                       
+                        <div class="input-boxes ">
+  
+                            <form class="row g-3 d-flex justify-content-center">
+
+                                <div class="col-md-3 me-2">
+                                  <label for="inputNome" class="form-label">Nome</label>
+                                  <input [(ngModel)]='usuario.nome' type="text" name="nome" class="form-control" id="nome" placeholder="Seu nome">
+                                </div>
+                                
+                                <div class="col-md-3 me-2">
+                                  <label for="inputEmail" class="form-label">Email</label>
+                                  <input [(ngModel)]='usuario.email'  type="email" name="email" class="form-control" id="email" placeholder="Seu email">
+                                </div>
+
+                                <div class="col-md-2 me-2">
+                                    <label for="inputData" class="form-label">Data de nascimento</label>
+                                    <input [(ngModel)]='usuario.dataNasc' type="date" name="dataNasc" class="form-control" id="dataNasc">
+                                  </div>
+                                  
+                                  <div class="col-md-3">
+                                    <label for="inputTelefone" class="form-label">Telefone</label>
+                                    <input [(ngModel)]='usuario.telefone' type="tel" name="telefone" class="form-control" id="telefone" placeholder="Seu telefone">
+                                  </div>
+  
+                                  <div class="col-md-2 me-2">
+                                    <label for="inputGenero" class="form-label">Genero</label>
+                                    <select id="genero" class="form-select" name="genero" (change)='generos($event)'>
+                                      <option selected>Selecione</option>
+                                      <option>Mulher cisgenero</option>
+                                      <option>Mulher trânsgenero</option>
+                                      <option>Homem cisgenero</option>
+                                    </select>
+                                  </div>
+  
+                                  <div class="col-md-3 me-2">
+                                    <label for="inputUsuario" class="form-label">Usuário</label>
+                                    <input [(ngModel)]='usuario.usuario' type="text" class="form-control" name="usuario" id="usuario" placeholder="Seu usuario">
+                                  </div>
+                                  
+                                  
+                                <div class="col-md-3 me-2">
+                                  <label for="inputUrlPerfil" class="form-label">Linck foto perfil</label>
+                                  <input [(ngModel)]='usuario.fotoPerfil'  type="text" class="form-control" id="urlFoto" name="urlFoto" placeholder="Linck da sua foto">
+                                </div>
+  
+                                <div class="col-md-3 ">
+                                    <label for="inputUrlSite" class="form-label">Url site</label>
+                                    <input [(ngModel)]='usuario.url'  type="text" name="urlSite" class="form-control" id="urlSite" placeholder="Seu site">
+                                  </div>
+  
+                                  <div class="col-6 me-2">
+                                    <label for="inputEndereco" class="form-label">Endereço</label>
+                                    <input [(ngModel)]='usuario.endereco'  type="text" name="endereco" class="form-control" id="endereco" placeholder="Seu endereço">
+                                  </div>
+  
+                                  <div class="col-5">
+                                    <label for="inputBio" class="form-label">Biografia</label>
+                                    <input [(ngModel)]='usuario.bio' type="text" name="bio" class="form-control" id="bio" placeholder="Conte um pouco sobre você">
+                                  </div>
+  
+                                  <div class="col-md-6 me-2">
+                                    <label for="inputSenha" class="form-label">Senha</label>
+                                    <input (input)='confirmSenha($event)'  type="password" class="form-control" name="senha" id="senha" placeholder="Sua senha">
+                                  </div>
+  
+                                  <div class="col-md-5">
+                                      <label for="inputConfirmarSenha" class="form-label">Confirmar senha</label>
+                                      <input [(ngModel)]='usuario.senha'  type="password" class="form-control" name="confirmSenha" id="confirmSenha" placeholder="Confirme sua senha">
+                                    </div>
+  
+                                   
+                                </form>
+  
+                                <div class="col mt-4 ms-5">
+                                  <button class="btn btn-outline-danger  me-3" routerLink='/feed'>Cancelar</button>
+                                    <button class="btn btn-outline-success" routerLink='feed'>Atualizar</button>
+                                   
+                                </div>
+                            
+                    </div>
+                    
+                    <!--Dados do cadastro fim-->
+                   
+                </div>
+          
+                <!--Todas as postagens feitas pela empreendedora--> <!--não esquecer de vincular as postagens-->
+                <div class="row">
+  
+                   
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

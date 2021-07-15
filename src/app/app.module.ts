@@ -13,11 +13,14 @@ import { LogarComponent } from './logar/logar.component';
 import { ContatoComponent } from './contato/contato.component';
 import { FeedComponent } from './feed/feed.component';
 import { TemaComponent } from './tema/tema.component';
-import { PerfilComponent } from './perfil/perfil.component';
 import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
+
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
+
+import { PerfilEditComponent } from './edit/perfil-edit/perfil-edit.component';
+
 
 
 @NgModule({
@@ -31,11 +34,11 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
     ContatoComponent,
     FeedComponent,
     TemaComponent,
-    PerfilComponent,
     TemaEditComponent,
     TemaDeleteComponent,
     PostagemEditComponent,
     PostagemDeleteComponent,
+    PerfilEditComponent,
   ],
   imports: [
     BrowserModule,
