@@ -14,10 +14,10 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
 
 
-  ngOnInit(){
+  
 
     window.scroll(0,0)
-  }
+  
 
 
   }

@@ -41,7 +41,7 @@ export class FeedComponent implements OnInit {
     this.sidebar()
 
     if(environment.token == ''){
-      alert('Sua seção expirou, faça o login novamente.')
+      alert('Sua sessão expirou, faça o login novamente.')
       this.router.navigate(['/logar'])
     }
 
@@ -120,14 +120,14 @@ export class FeedComponent implements OnInit {
     this.usuario.id = this.idUser
     this.postagem.usuario = this.usuario
 
-    // this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem)=>{
-    //   this.postagem = resp
-    //   alert('Postagem realizada com sucesso! ✔️')
-    //   this.postagem = new Postagem()
-    //   this.getAllPostagens()
-    // })
+    this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem)=>{
+       this.postagem = resp
+       alert('Postagem realizada com sucesso! ✔️')
+       this.postagem = new Postagem()
+       this.getAllPostagens()
+     })
 
-    console.log(this.postagem)
+    //console.log(this.postagem)
 
   }
 
