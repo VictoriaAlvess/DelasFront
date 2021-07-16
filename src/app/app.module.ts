@@ -20,6 +20,8 @@ import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.compon
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 
 import { PerfilEditComponent } from './edit/perfil-edit/perfil-edit.component';
+import { CadastrarConsumidoreComponent } from './cadastrar-consumidore/cadastrar-consumidore.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 
@@ -39,6 +41,8 @@ import { PerfilEditComponent } from './edit/perfil-edit/perfil-edit.component';
     PostagemEditComponent,
     PostagemDeleteComponent,
     PerfilEditComponent,
+    CadastrarConsumidoreComponent,
+    PerfilComponent,
   ],
   imports: [
     BrowserModule,

@@ -15,37 +15,40 @@
          <input type="text" placeholder="Pesquisar...">
          <span class="tooltip">Pesquisar</span>
       </li>
+
       <li>
-         <a href="#">
+         <a routerLink='/feed'>
             <i class='bx bx-grid-alt'></i>
             <span class="links_name">Página inicial</span>
          </a>
-
          <span class="tooltip" routerLink='/feed'>Página inicial</span>
-
          <span class="tooltip">Página inicial</span>
       </li>
 
       <li>
-
-         <a [routerLink]="['/perfil-edit', id]">
+         <a routerLink='/perfil'>
             <i class='bx bx-user' ></i>
-
             <span class="links_name" >Meu Perfil</span>
          </a>
          <span class="tooltip">Meu Perfil</span>
-
       </li>
 
 
       <li>
-
-         <i class="profile">{{usuario.fotoPerfil}}</i>
-         <i class='bx bx-log-out' id="log_out" routerLink='/logar'></i>
-
-         <i class="profile"></i>
-
+         <a routerLink='/home'>
+            <i class='bx bx-log-out' id="log_out"></i>
+            <span class="links_name">Sair</span>
+         </a>
+         <span class="tooltip">Sair</span>
       </li>
+      
+      <li class="profile">
+         <!-- <a routerLink='/home'>
+         <i class='bx bx-log-out' id="log_out" ></i>
+         </a> -->
+     </li>
+
+      
    </ul>
 </div>
 
@@ -119,15 +122,17 @@
                            <div class="timeline-body">
                               <div class="timeline-header">
                                  <span class="userimage">
-                                    <img src="" alt="">{{usuario.fotoPerfil}}</span>
-                                 <span class="username"><a href="">{{usuario.usuario}}</a> <small></small></span>
+                                    <img src="{{usuario.fotoPerfil}}" alt=""></span>
+                                 <span class="username">
+                                    <a href="">{{usuario.usuario}}</a> <small></small></span>
                               </div>
 
                               <div class="timeline-content" *ngFor='let item of listaPostagens'>
                                  <p>
-                                    {{postagem.textoPost}}
+                                    {{item.textoPost}}
                                  </p>
-                              </div>
+                                 <img src="{{ item.fotoPost }}" alt="">
+                              
                               <div class="timeline-likes">
 
                                  <div class="stats">
@@ -145,7 +150,8 @@
 
                               <div>
                                  <button type="button" class="btn btn-outline-dark me-4 my-2">Editar </button>
-                                 <button type="button" class="btn btn-outline-dark">Apagar</button>
+                                 <a [routerLink]="['/postagem-delete',item.id]"  type="button" class="btn btn-outline-dark">Apagar</a>
+                              </div>
                               </div>
                            </div>
                      </ul>

@@ -1,4 +1,27 @@
-body{
+.profile-head {
+    transform: translateY(3rem)
+  }
+  
+  .cover {
+    background-image: url(../../assets/img/novacapadelas.jpg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  body {
+    background: #654ea3;
+    background: linear-gradient(to right, #e96443, #904e95);
+    min-height: 100vh;
+    overflow-x: hidden
+  }
+  
+  .corRoxa {
+  background-color: #d5baf5;
+  min-height: 100vh;
+
+  }
+  
+  body{
     margin-top:20px;
     background:#eee;
 }
