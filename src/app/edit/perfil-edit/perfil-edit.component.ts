@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment.prod';
 })
 export class PerfilEditComponent implements OnInit {
 
-  
+  id = environment.id
   usuario: Usuario = new Usuario()
   idUser: number 
   genero: string;

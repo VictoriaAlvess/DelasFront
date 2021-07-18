@@ -65,7 +65,7 @@ export class LogarComponent implements OnInit {
       environment.token = this.userLogin.token
       environment.usuario = this.userLogin.usuario     
       environment.id = this.userLogin.id
-
+      console.log(environment)
       this.router.navigate(['/feed'])
     }, erro =>{
       if(erro.status == 500){

@@ -19,7 +19,7 @@ export class PerfilComponent implements OnInit {
   genero: string;
   confirmarSenha: string;
   tipoUsuario: string;
-  
+  idUser: number 
   
 
   constructor(
@@ -31,9 +31,16 @@ export class PerfilComponent implements OnInit {
   ngOnInit() {
     window.scroll(0,0)
 
-    
+
+   this.idUser = this.route.snapshot.params['id']
+   this.findByIdUser(this.idUser)
   }
 
+  findByIdUser(id: number) {
+    this.authService.getByIdUser(id).subscribe((resp: Usuario)=>{
+      this.usuario = resp
+    })
+}
 
   
 }

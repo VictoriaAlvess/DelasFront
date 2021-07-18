@@ -5,7 +5,7 @@
             <div class="px-5 pt-0 pb-4 cover ">
                 <div class="media align-items-end profile-head ">
                     <!--Foto e nome do perfil-->
-                    <div class="profile mr-3"><img src="../../assets/img/vic-foto.jpg" alt="..." width="130" class="rounded mb-2 img-thumbnail "></div>
+                    <div class="profile mr-3"><img src="{{usuario.fotoPerfil}}" alt="..." width="130" class="rounded mb-2 img-thumbnail "></div>
                    
                     <div class="media-body mb-5 text-white">
                         <h4 class="mt-0 mb-0"></h4>
@@ -95,7 +95,8 @@
                                 </form>
   
                                 <div class="col mt-4 ms-5">
-                                  <button class="btn btn-outline-danger  me-3" routerLink='/perfil'>Cancelar</button>
+                                  <button class="btn btn-outline-danger  me-3" [routerLink]="['/perfil', id]"
+                                  >Cancelar</button>
                                     <button class="btn btn-outline-success" click='atualizar()'>Atualizar</button>
                                 </div>
                             

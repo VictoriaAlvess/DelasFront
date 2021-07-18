@@ -23,7 +23,7 @@ const routes: Routes = [
   {path: 'tema-edit/:id', component: TemaEditComponent},
   {path: 'tema-delete/:id', component: TemaDeleteComponent},
   {path: 'perfil-edit/:id' , component: PerfilEditComponent },
-  {path: 'perfil', component: PerfilComponent},
+  {path: 'perfil/:id', component: PerfilComponent},
   {path: 'postagem-delete/:id', component: PostagemDeleteComponent}
 
   
