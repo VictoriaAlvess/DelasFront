@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+
 
 .banner {
   width: 100%;
@@ -107,8 +109,8 @@ button {
   margin: 20px 10px;
   border-radius: 25px;
   font-weight: bold;
-  border: 2px solid purple;
-  background: transparent;
+  border: 2px solid #370A37;
+  background: #370A37;
   color: #fff;
   cursor: pointer;
   position: relative;
@@ -128,13 +130,13 @@ span {
 }
 
 button:hover span {
-
+  border: none;
   width: 100%;
 }
 
 button:hover {
-background-color: purple;
-  border: none;
+background-color: transparent;
+color: #fff
 }
 
 
@@ -476,7 +478,7 @@ background-color: #8b008b;
 .footer-col h4{
 font-size: 18px;
 color: #ffffff;
-text-transform: capitalize;
+/* text-transform: capitalize; */
 margin-bottom: 35px;
 font-weight: 500;
 position: relative;
@@ -496,7 +498,7 @@ margin-bottom: 10px;
 }
 .footer-col ul li a{
 font-size: 16px;
-text-transform: capitalize;
+/* text-transform: capitalize; */
 color: #ffffff;
 text-decoration: none;
 font-weight: 300;

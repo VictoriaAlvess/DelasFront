@@ -40,15 +40,7 @@
             <span class="links_name">Sair</span>
          </a>
          <span class="tooltip">Sair</span>
-      </li>
-      
-      <li class="profile">
-         <!-- <a routerLink='/home'>
-         <i class='bx bx-log-out' id="log_out" ></i>
-         </a> -->
-     </li>
-
-      
+      </li>   
    </ul>
 </div>
 
@@ -122,9 +114,9 @@
                            <div class="timeline-body">
                               <div class="timeline-header">
                                  <span class="userimage">
-                                    <img src="{{usuario.fotoPerfil}}" alt=""></span>
+                                    <img src="https://i.imgur.com/IyMTZZC.jpg" alt=""></span>
                                  <span class="username">
-                                    <a href="">{{usuario.usuario}}</a> <small></small></span>
+                                    <a href="">VicLinda</a> <small></small></span>
                               </div>
 
                               <div class="timeline-content" *ngFor='let item of listaPostagens'>
@@ -149,7 +141,7 @@
                               </div>
 
                               <div>
-                                 <button type="button" class="btn btn-outline-dark me-4 my-2">Editar </button>
+                                 <button [routerLink]="['/postagem-edit',item.id]" type="button" class="btn btn-outline-dark me-4 my-2">Editar </button>
                                  <a [routerLink]="['/postagem-delete',item.id]"  type="button" class="btn btn-outline-dark">Apagar</a>
                               </div>
                               </div>

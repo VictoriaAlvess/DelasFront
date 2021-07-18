@@ -1,112 +1,119 @@
-
 <div class="container-fluid">
 
-    <div class="row d-flex align-items-center">
+  <div class="row d-flex align-items-center">
 
-        <div class="col-12">
-            <div class="row d-flex justify-content-center mt-5">
-                <div class="col-md-7">
-                    <div class="container">
-
-                        <input type="checkbox">
-                        <div class="cover">
-                            <div class="front">
-                                <img src="https://images.pexels.com/photos/5685865/pexels-photo-5685865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="">
-                                <div class="text">
-                                    <span class="text-1">Ei, mulher, vamos subir mais um degrau?<br> só mais um
-                                        passo</span>
-                                    <span class="text-2">Vamos começar!</span>
-                                </div>
-                            </div>
-                        </div>
-                        <form action="#">
-                            <div class="form-content">
-                                
-                                <div class="signup-form">
-                                    <div class="title">Cadastro consumidore</div>
-                                    <div class="input-boxes">
-
-                                        <form class="row g-3">
-                                            <div class="col-md-6 me-4">
-                                              <label for="inputNome" class="form-label">Nome</label>
-                                              <input [(ngModel)]='usuario.nome' type="text" name="nome" class="form-control" id="nomeConsu" placeholder="Digite seu nome">
-                                            </div>
-                                            
-                                            <div class="col-md-5">
-                                              <label for="inputEmail" class="form-label">Email</label>
-                                              <input [(ngModel)]='usuario.email'  type="email" name="email" class="form-control" id="emailConsu" placeholder="Digite seu email">
-                                            </div>
-
-                                            <div class="col-md-6 me-4">
-                                                <label for="inputData" class="form-label">Data de nascimento</label>
-                                                <input [(ngModel)]='usuario.dataNasc' type="date" name="dataNasc" class="form-control" id="dataNascConsu">
-                                              </div>
-
-                                              <div class="col-md-6 me-4">
-                                                <label for="inputGenero" class="form-label">Genero</label>
-                                                <select id="generoConsu" class="form-select" name="genero" (change)='generos($event)'>
-                                                  <option selected>Selecione</option>
-                                                  <option>Mulher cisgenero</option>
-                                                  <option>Mulher trânsgenero</option>
-                                                  <option>Homen cisgenero</option>
-                                                  <option>Homen transgenero</option>
-                                                </select>
-                                              </div>
-
-                                              <div class="col-md-5">
-                                                <label for="inputUsuario" class="form-label">Usuário</label>
-                                                <input [(ngModel)]='usuario.usuario' type="text" class="form-control" name="usuario" id="usuarioConsu" placeholder="Digite seu usuario">
-                                              </div>
-                                              
-                                              
-                                            <div class="col-md-6 me-4">
-                                              <label for="inputUrlPerfil" class="form-label">Url foto perfil</label>
-                                              <input [(ngModel)]='usuario.fotoPerfil'  type="text" class="form-control" id="urlFotoConsu" name="urlFoto" placeholder="Insira sua foto">
-                                            </div>
-
-                                              <div class="col-12">
-                                                <label for="inputBio" class="form-label">Biografia</label>
-                                                <input [(ngModel)]='usuario.bio' type="text" name="bio" class="form-control" id="bioConsu" placeholder="Conte um pouco sobre você">
-                                              </div>
-
-                                              <div class="col-md-6 me-4">
-                                                <label for="inputSenha" class="form-label">Senha</label>
-                                                <input (input)='confirmSenha($event)'  type="password" class="form-control" name="senha" id="senhaConsu" placeholder="Insira sua senha">
-                                              </div>
-  
-                                              <div class="col-md-5">
-                                                  <label for="inputConfirmarSenha" class="form-label">Confirmar senha</label>
-                                                  <input [(ngModel)]='usuario.senha'  type="password" class="form-control" name="confirmSenha" id="confirmSenhaConsu" placeholder="Confirme sua senha">
-                                                </div>
-
-                                                <i class="fas fa-lock">Selecione seu tipo de usuário</i>
-                                        <select class="form-control" name="tipoUser" id="tipoUser" (change)='tipoUser($event)'>
-                                            <option> Selecione um tipo de usuário</option>
-                                            <option value="normal">Consumidore</option>
-                                            <option value="normal">Empreendedora</option>
-                                        </select>
-                                            </form>
+    <div class="col-12">
+      <div class="row d-flex justify-content-center mt-5">
+        <div class="col-md-7">
+          <div class="container">
 
 
-                                        <div class="button input-box">
-                                            <input class="me-4" type="submit" value="cancelar" routerLink="/home">
-                                            <input type="submit" value="cadastrar" (click)='cadastrar()'>
-                                        </div>
-                                        <div class="text sign-up-text">Já possui uma conta? <label routerLink='/logar'>Faça o
-                                                login</label></div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </form>
-
-                        
-                    </div>
+            <div class="cover">
+              <div class="front">
+                <img
+                  src="https://images.pexels.com/photos/5685865/pexels-photo-5685865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt="">
+                <div class="text">
+                  <span class="text-1">Ei, mulher, vamos subir mais um degrau?<br> só mais um
+                    passo</span>
+                  <span class="text-2">Vamos começar!</span>
                 </div>
+              </div>
             </div>
+            <form action="#">
+              <div class="form-content">
 
+                <div class="signup-form">
+                  <div class="title">Cadastro consumidore</div>
+                  <div class="input-boxes">
+
+                    <form class="row g-3">
+                      <div class="col-md-6 me-4">
+                        <label for="inputNome" class="form-label">Nome</label>
+                        <input [(ngModel)]='usuario.nome' type="text" name="nome" class="form-control" id="nomeConsu"
+                          placeholder="Digite seu nome">
+                      </div>
+
+                      <div class="col-md-5">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input [(ngModel)]='usuario.email' type="email" name="email" class="form-control"
+                          id="emailConsu" placeholder="Digite seu email">
+                      </div>
+
+                      <div class="col-md-6 me-4">
+                        <label for="inputData" class="form-label">Data de nascimento</label>
+                        <input [(ngModel)]='usuario.dataNasc' type="date" name="dataNasc" class="form-control"
+                          id="dataNascConsu">
+                      </div>
+
+                      <div class="col-md-6 me-4">
+                        <label for="inputGenero" class="form-label">Genero</label>
+                        <select id="generoConsu" class="form-select" name="genero" (change)='generos($event)'>
+                          <option selected>Selecione</option>
+                          <option>Mulher cisgenero</option>
+                          <option>Mulher trânsgenero</option>
+                          <option>Homen cisgenero</option>
+                          <option>Homen transgenero</option>
+                        </select>
+                      </div>
+
+                      <div class="col-md-5">
+                        <label for="inputUsuario" class="form-label">Usuário</label>
+                        <input [(ngModel)]='usuario.usuario' type="text" class="form-control" name="usuario"
+                          id="usuarioConsu" placeholder="Digite seu usuario">
+                      </div>
+
+
+                      <div class="col-md-6 me-4">
+                        <label for="inputUrlPerfil" class="form-label">Url foto perfil</label>
+                        <input [(ngModel)]='usuario.fotoPerfil' type="text" class="form-control" id="urlFotoConsu"
+                          name="urlFoto" placeholder="Insira sua foto">
+                      </div>
+
+                      <div class="col-12">
+                        <label for="inputBio" class="form-label">Biografia</label>
+                        <input [(ngModel)]='usuario.bio' type="text" name="bio" class="form-control" id="bioConsu"
+                          placeholder="Conte um pouco sobre você">
+                      </div>
+
+                      <div class="col-md-6 me-4">
+                        <label for="inputSenha" class="form-label">Senha</label>
+                        <input (input)='confirmSenha($event)' type="password" class="form-control" name="senha"
+                          id="senhaConsu" placeholder="Insira sua senha">
+                      </div>
+
+                      <div class="col-md-5">
+                        <label for="inputConfirmarSenha" class="form-label">Confirmar senha</label>
+                        <input [(ngModel)]='usuario.senha' type="password" class="form-control" name="confirmSenha"
+                          id="confirmSenhaConsu" placeholder="Confirme sua senha">
+                      </div>
+
+                      <label for="inputGenero" class="form-label pt-2">Tipo de usuário</label>
+                      <select id="genero" class="form-select" name="genero" (change)='generos($event)'>
+                        <option selected>Selecione</option>
+                        <option>Empreendedora</option>
+                        <option>Consumidore</option>
+                      </select>
+                    </form>
+
+
+                    <div class="button input-box">
+                      <input class="me-4" type="submit" value="cancelar" routerLink="/home">
+                      <input type="submit" value="cadastrar" (click)='cadastrar()'>
+                    </div>
+                    <div class="text sign-up-text">Já possui uma conta? <label routerLink='/logar'>Faça o
+                        login</label></div>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+
+
+          </div>
         </div>
-    </div>
-</div>
+      </div>
 
+    </div>
+  </div>
+</div>

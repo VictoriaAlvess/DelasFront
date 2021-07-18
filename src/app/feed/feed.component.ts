@@ -1,3 +1,4 @@
+import { NONE_TYPE } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
@@ -61,6 +62,8 @@ export class FeedComponent implements OnInit {
     let sidebar = document.querySelector('.sidebar');
     let closeBtn = document.querySelector('#btn');
     let searchBtn = document.querySelector('.bx-search');
+          let img = document.querySelector('img');
+
 
     closeBtn?.addEventListener('click', ()=>{
       sidebar?.classList.toggle('open');
@@ -71,6 +74,7 @@ export class FeedComponent implements OnInit {
       sidebar?.classList.toggle('open');
       menuBtnChange();
     });
+
 
     function menuBtnChange(){
       if(sidebar?.classList.contains('open')){
