@@ -191,6 +191,7 @@ body{
     border: none
 }
 
+
 .profile-header .profile-header-tab>li.active>a,
 .profile-header .profile-header-tab>li>a.active {
     color: #242a30
@@ -671,7 +672,7 @@ select.form-control:not([size]):not([multiple]) {
   top: 0;
   height: 100%;
   width: 78px;
-  background: #11101D;
+  background: #370A37;
   padding: 6px 14px;
   z-index: 99;
   transition: all 0.5s ease;
@@ -913,4 +914,9 @@ select.form-control:not([size]):not([multiple]) {
     border-radius: 15px;
     padding: 50px 50px 50px 50px;
     box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.2);
+    /* position: fixed; */
+  }
+
+  textarea{
+    resize: none;
   }

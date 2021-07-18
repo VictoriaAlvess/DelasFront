@@ -11,6 +11,8 @@ import { PerfilEditComponent } from './edit/perfil-edit/perfil-edit.component';
 import { CadastrarConsumidoreComponent } from './cadastrar-consumidore/cadastrar-consumidore.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
+import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -23,8 +25,12 @@ const routes: Routes = [
   {path: 'tema-edit/:id', component: TemaEditComponent},
   {path: 'tema-delete/:id', component: TemaDeleteComponent},
   {path: 'perfil-edit/:id' , component: PerfilEditComponent },
+  { path: 'perfil', component: PerfilComponent},
+  {path: 'postagem-delete/:id', component: PostagemDeleteComponent},
+  {path: 'postagem-edit/:id', component: PostagemEditComponent}
   {path: 'perfil/:id', component: PerfilComponent},
   {path: 'postagem-delete/:id', component: PostagemDeleteComponent}
+
 
   
 ];

@@ -7,7 +7,7 @@
                 <div class="col-md-8">
                     <div class="container">
 
-                        <input type="checkbox">
+                       
                         <div class="cover">
                             <div class="front">
                                 <img src="https://images.pexels.com/photos/5685865/pexels-photo-5685865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
@@ -33,22 +33,22 @@
                                             </div>
                                             
                                             <div class="col-md-5">
-                                              <label for="inputEmail" class="form-label">Email</label>
+                                              <label for="inputEmail" class="form-label pt-2">Email</label>
                                               <input [(ngModel)]='usuario.email'  type="email" name="email" class="form-control" id="email" placeholder="Digite seu email">
                                             </div>
 
                                             <div class="col-md-6 me-4">
-                                                <label for="inputData" class="form-label">Data de nascimento</label>
+                                                <label for="inputData" class="form-label pt-2">Data de nascimento</label>
                                                 <input [(ngModel)]='usuario.dataNasc' type="date" name="dataNasc" class="form-control" id="dataNasc">
                                               </div>
 
                                               <div class="col-md-5">
-                                                <label for="inputTelefone" class="form-label">Telefone</label>
+                                                <label for="inputTelefone" class="form-label pt-2">Telefone</label>
                                                 <input [(ngModel)]='usuario.telefone' type="tel" name="telefone" class="form-control" id="telefone" placeholder="Digite seu telefone">
                                               </div>
 
                                               <div class="col-md-6 me-4">
-                                                <label for="inputGenero" class="form-label">Genero</label>
+                                                <label for="inputGenero" class="form-label pt-2">Genero</label>
                                                 <select id="genero" class="form-select" name="genero" (change)='generos($event)'>
                                                   <option selected>Selecione</option>
                                                   <option>Mulher cisgenero</option>
@@ -57,40 +57,47 @@
                                               </div>
 
                                               <div class="col-md-5">
-                                                <label for="inputUsuario" class="form-label">Usuário</label>
+                                                <label for="inputUsuario" class="form-label pt-2">Usuário</label>
                                                 <input [(ngModel)]='usuario.usuario' type="text" class="form-control" name="usuario" id="usuario" placeholder="Digite seu usuario">
                                               </div>
                                               
                                               
                                             <div class="col-md-6 me-4">
-                                              <label for="inputUrlPerfil" class="form-label">Url foto perfil</label>
+                                              <label for="inputUrlPerfil" class="form-label pt-2">Link foto perfil</label>
                                               <input [(ngModel)]='usuario.fotoPerfil'  type="text" class="form-control" id="urlFoto" name="urlFoto" placeholder="Insira sua foto">
                                             </div>
 
                                             <div class="col-md-5">
-                                                <label for="inputUrlSite" class="form-label">Url site</label>
+                                                <label for="inputUrlSite" class="form-label pt-2">Url site</label>
                                                 <input [(ngModel)]='usuario.url'  type="text" name="urlSite" class="form-control" id="urlSite" placeholder="Insira seu site">
                                               </div>
 
                                               <div class="col-12">
-                                                <label for="inputEndereco" class="form-label">Endereço</label>
+                                                <label for="inputEndereco" class="form-label pt-2">Endereço</label>
                                                 <input [(ngModel)]='usuario.endereco'  type="text" name="endereco" class="form-control" id="endereco" placeholder="Digite seu endereço">
                                               </div>
 
                                               <div class="col-12">
-                                                <label for="inputBio" class="form-label">Biografia</label>
+                                                <label for="inputBio" class="form-label pt-2">Biografia</label>
                                                 <input [(ngModel)]='usuario.bio' type="text" name="bio" class="form-control" id="bio" placeholder="Conte um pouco sobre você">
                                               </div>
 
                                               <div class="col-md-6 me-4">
-                                                <label for="inputSenha" class="form-label">Senha</label>
+                                                <label for="inputSenha" class="form-label pt-2">Senha</label>
                                                 <input (input)='confirmSenha($event)'  type="password" class="form-control" name="senha" id="senha" placeholder="Insira sua senha">
                                               </div>
   
                                               <div class="col-md-5">
-                                                  <label for="inputConfirmarSenha" class="form-label">Confirmar senha</label>
+                                                  <label for="inputConfirmarSenha" class="form-label pt-2">Confirmar senha</label>
                                                   <input [(ngModel)]='usuario.senha'  type="password" class="form-control" name="confirmSenha" id="confirmSenha" placeholder="Confirme sua senha">
                                                 </div>
+
+                                                <label for="inputGenero" class="form-label pt-2">Tipo de usuário</label>
+                                                <select id="genero" class="form-select" name="genero" (change)='generos($event)'>
+                                                  <option selected>Selecione</option>
+                                                  <option>Empreendedora</option>
+                                                  <option>Consumidore</option>
+                                                </select>
 
                                                 <i class="fas fa-lock">Selecione seu tipo de usuário:</i>
                                         <select class="form-control" name="tipoUser" id="tipoUser" (change)='tipoUser($event)'>
