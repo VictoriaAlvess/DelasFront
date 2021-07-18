@@ -2,10 +2,16 @@
     <div class="col-md-12 mx-auto ">
         <!-- Profile widget -->
         <div class="bg-white shadow rounded overflow-hidden ">
-            <div class="px-5 pt-2 pb-5 cover ">
-                <div class="media align-items-end profile-head ">
+            
+         <div class="bg-white shadow rounded overflow-hidden mt-2 " >
+              <button class="btn btn-outline-dark ms-3 me-2" routerLink='/feed'>Feed</button>
+               <button  class="btn btn-outline-dark ms-3" [routerLink]="['/perfil-edit', id]"
+               >Editar</button>
+            </div>
+
+            <div class="px-4 pt-2 pb-3 cover ">
                     <!--Foto e nome do perfil-->
-                    <div class="profile mr-3 rounded-3">
+                    <div class="profile mr-3 mt-2 rounded-3">
                         <!-- <img src="../../assets/img/gabi-foto.jpeg" alt="..." width="300" height="400"
                             class="rounded mb-2 img-thumbnail "> -->
 
@@ -15,10 +21,14 @@
                     <div class="media-body mb-5 text-white">
                         <h4 class="mt-0 mb-0"></h4>
                     </div>
-                </div>
             </div>
+           
         </div>
     </div>
+
+
+
+
 
     <!--Inicio minhas postagens-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">

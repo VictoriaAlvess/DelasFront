@@ -16,7 +16,7 @@ export class PerfilEditComponent implements OnInit {
   idUser: number 
   genero: string;
   confirmarSenha: string;
-  tipoUsuario: string;
+  tipoUsuario: string;  
 
   constructor(
     private authService: AuthService, //injeção de dependencia
@@ -28,7 +28,7 @@ export class PerfilEditComponent implements OnInit {
     window.scroll(0,0)
 
     if(environment.token == ''){
-      this.router.navigate(['/logar'])
+      this.router.navigate(['/perfil'])
     }
     this.idUser = this.route.snapshot.params['id']
     this.findByIdUser(this.idUser)
@@ -49,4 +49,33 @@ export class PerfilEditComponent implements OnInit {
         this.usuario = resp
       })
   }
+
+  atualizar() {
+    this.usuario.genero = this.genero
+    this.usuario.tipoUser = this.tipoUsuario
+
+    if(this.usuario.senha != this.confirmarSenha){
+      alert('As senhas estão incorretas!')
+      console.log(this.usuario)
+    } else {
+      this.authService.cadastrar(this.usuario).subscribe((resp: Usuario)=>{
+        this.usuario = resp
+        console.log(this.usuario)
+        alert('Usuário atualizado com sucesso!, faça o login novamente.')
+        environment.id = 0
+        environment.token = ''
+        environment.nome = ''
+        environment.genero = ''
+        environment.dataNasc = 0
+        environment.usuario = ''
+        environment.telefone =''
+        environment.fotoPerfil = ''
+        environment.endereco = ''
+        environment.url= ''
+        environment.bio = ''
+        this.router.navigate(['/logar']);
+      })
+    }
+  }
+
 }

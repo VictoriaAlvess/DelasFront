@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
+import { Postagem } from '../model/Postagem';
 import { Usuario } from '../model/Usuario';
 import { AuthService } from '../service/auth.service';
 
@@ -10,12 +11,16 @@ import { AuthService } from '../service/auth.service';
   styleUrls: ['./perfil.component.css']
 })
 export class PerfilComponent implements OnInit {
+  
+  
+  id = environment.id
 
   usuario: Usuario = new Usuario()
-  idUser: number 
   genero: string;
   confirmarSenha: string;
   tipoUsuario: string;
+  
+  
 
   constructor(
     private authService: AuthService, //injeção de dependencia
@@ -26,9 +31,9 @@ export class PerfilComponent implements OnInit {
   ngOnInit() {
     window.scroll(0,0)
 
-    if(environment.token == ''){
-      this.router.navigate(['/logar'])
-    }
-    this.idUser = this.route.snapshot.params['id']
+    
   }
+
+
+  
 }
