@@ -27,7 +27,7 @@ const routes: Routes = [
   {path: 'perfil-edit/:id' , component: PerfilEditComponent },
   { path: 'perfil', component: PerfilComponent},
   {path: 'postagem-delete/:id', component: PostagemDeleteComponent},
-  {path: 'postagem-edit/:id', component: PostagemEditComponent}
+  {path: 'postagem-edit/:id', component: PostagemEditComponent},
   {path: 'perfil/:id', component: PerfilComponent},
   {path: 'postagem-delete/:id', component: PostagemDeleteComponent}
 

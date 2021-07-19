@@ -19,6 +19,7 @@ export class FeedComponent implements OnInit {
   id = environment.id
   nome = environment.nome
   fotoPerfil = environment.fotoPerfil
+  
    
 
   usuario: Usuario = new Usuario()
@@ -35,7 +36,7 @@ export class FeedComponent implements OnInit {
   constructor(
     private router: Router,
     private temaService: TemaService,
-    private authService: AuthService,
+    public authService: AuthService,
     private postagemService: PostagemService
 
   ) { }
