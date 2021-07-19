@@ -10,6 +10,7 @@ import { Usuario } from '../model/Usuario';
 })
 export class AuthService {
 
+
   constructor(
     private  http: HttpClient
   ) { }
@@ -29,6 +30,14 @@ export class AuthService {
   
   getByIdUser(id: number): Observable<Usuario>{
     return this.http.get<Usuario>(`https://delasbackend.herokuapp.com/usuarios/${id}`, this.token)
+  }
+
+  adm(){
+    let ok : boolean = false;
+    if(environment.tipoUser == 'adm'){
+      ok = true
+    }
+    return ok;
   }
   
 }

@@ -72,7 +72,7 @@
             <div class="col-md-11 p-0 m-0">
                <div class="form-group mt-2">
                   <label for="tema">Escolha uma categoria
-                     <a data-bs-dismiss="modal" routerLink='/tema'>Cadastre um novo</a>: </label>
+                     <a *ngIf="authService.adm()" routerLink='/tema' data-bs-dismiss="modal">Cadastre um novo</a>: </label>
                   <select name="tema" id="tema" class="form-control" [(ngModel)]='idTema' (change)='findByIdTemas()'>
                      <option *ngFor='let tema of listaTemas' value="{{tema.id}}"> {{tema.categorias}}
                      </option>
@@ -114,9 +114,9 @@
                            <div class="timeline-body">
                               <div class="timeline-header">
                                  <span class="userimage">
-                                    <img src="https://i.imgur.com/IyMTZZC.jpg" alt=""></span>
+                                    <img src="{{usuario.fotoPerfil}}" alt=""></span>
                                  <span class="username">
-                                    <a href="">VicLinda</a> <small></small></span>
+                                    <a href="">{{usuario.nome}}</a> <small></small></span>
                               </div>
 
                               <div class="timeline-content" *ngFor='let item of listaPostagens'>

@@ -11,5 +11,6 @@ export const environment = {
   telefone: '',
   endereco: '',
   url: '',
-  bio: ''
+  bio: '',
+  tipoUser: ''
 };
