@@ -14,8 +14,8 @@
                   src="https://images.pexels.com/photos/5685865/pexels-photo-5685865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                   alt="">
                 <div class="text">
-                  <span class="text-1">Ei, mulher, vamos subir mais um degrau?<br> só mais um
-                    passo</span>
+                  <span class="text-1">Ei mulher, <br> vamos subir mais um degrau?<br> Só mais um
+                    passo.</span> <br>
                   <span class="text-2">Vamos começar!</span>
                 </div>
               </div>
@@ -35,9 +35,9 @@
                       </div>
 
                       <div class="col-md-5">
-                        <label for="inputEmail" class="form-label pt-2">Email</label>
+                        <label for="inputEmail" class="form-label pt-2">E-mail</label>
                         <input [(ngModel)]='usuario.email' type="email" name="email" class="form-control" id="email"
-                          placeholder="Digite seu email">
+                          placeholder="Digite seu e-mail">
                       </div>
 
                       <div class="col-md-6 me-4">
@@ -53,7 +53,7 @@
                       </div>
 
                       <div class="col-md-6 me-4">
-                        <label for="inputGenero" class="form-label pt-2">Genero</label>
+                        <label for="inputGenero" class="form-label pt-2">Gênero</label>
                         <select id="genero" class="form-select" name="genero" (change)='generos($event)'>
                           <option selected>Selecione</option>
                           <option>Mulher cisgenero</option>
@@ -69,15 +69,15 @@
 
 
                       <div class="col-md-6 me-4">
-                        <label for="inputUrlPerfil" class="form-label pt-2">Link foto perfil</label>
+                        <label for="inputUrlPerfil" class="form-label pt-2">Foto do perfil</label>
                         <input [(ngModel)]='usuario.fotoPerfil' type="text" class="form-control" id="urlFoto"
-                          name="urlFoto" placeholder="Insira sua foto">
+                          name="urlFoto" placeholder="Link da foto">
                       </div>
 
                       <div class="col-md-5">
-                        <label for="inputUrlSite" class="form-label pt-2">Url site</label>
+                        <label for="inputUrlSite" class="form-label pt-2">Loja virtual</label>
                         <input [(ngModel)]='usuario.url' type="text" name="urlSite" class="form-control" id="urlSite"
-                          placeholder="Insira seu site">
+                          placeholder="Insira o link aqui">
                       </div>
 
                       <div class="col-12">
@@ -101,12 +101,12 @@
                       <div class="col-md-5">
                         <label for="inputConfirmarSenha" class="form-label pt-2">Confirmar senha</label>
                         <input [(ngModel)]='usuario.senha' type="password" class="form-control" name="confirmSenha"
-                          id="confirmSenha" placeholder="Confirme sua senha">
+                          id="confirmSenha" placeholder="Senha">
                       </div>
 
-                      <label for="inputTipoUser" class="form-label pt-2">Selecione seu tipo de usuário</label>
+                      <label for="inputTipoUser" class="form-label pt-2">Tipo de usuário</label>
                       <select id="tipoUser" class="form-select" name="tipoUser" (change)='tipoUser($event)'>
-                        <option selected>Selecione</option>
+                        <option selected>Selecione a opção desejada</option>
                         <option>Empreendedora</option>
                       </select>
 
@@ -116,7 +116,7 @@
 
                     <div class="button input-box">
                       <input class="me-4" type="submit" value="cancelar" routerLink="/home">
-                      <input type="submit" value="cadastrar" (click)='cadastrar()'>
+                      <input type="submit" type="button" value="cadastrar" (click)='cadastrar()'>
                     </div>
                     <div class="text sign-up-text">Já possui uma conta? <label routerLink='/logar'>Faça o
                         login</label></div>

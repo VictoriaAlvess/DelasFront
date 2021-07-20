@@ -1,12 +1,12 @@
 <div class="container-fluid">
 
-  <div class="banner">
+  <div class="banner" id="home">
 
     <div class="navbar">
       <!--//Logo do Delas linha 9 -->
       <div class="navLeft">
         <ul>
-          <li> <img src="../../assets/img/delas.png" width="70px" height="70px" alt=""></li>
+          <a> <img src="../../assets/img/delas.png" width="70px" height="70px" alt=""></a>
           <li> <a href="#">Home</a> </li>
           <li> <a href="#equipe">Equipe</a> </li>
           <li> <a href="#sobre">Sobre</a></li>
@@ -22,10 +22,10 @@
     </div>
     <!-- nome da rede social e descição -->
     <div class="content mt-5">
-      <h1 class="h1"> <strong> Delas </strong> </h1> 
-      <p> Sua vitrine interativa para divulgação do trabalho de
+      <h1 class="h1"> <strong> Delas </strong> </h1>
+      <p align="justify"> Sua vitrine interativa para divulgação do trabalho de
         mulheres múltiplas e periféricas no mercado
-        empreendedor!<br> </p>
+        empreendedor! </p>
       <p> Escolha seu tipo de conta e cadastre-se abaixo: </p>
       <div class="d-flex justify-content-center">
         <button routerLink='/cadastrar' type="button">Empreendedora</button>
@@ -45,28 +45,35 @@
 
 <!--primeiro-->
 <div class="col-md-12 d-flex justify-content-center">
-  <div class="containerContato">
+  <div class="containerContato" id="sobre">
     <div class="contentContato">
-
       <div class="">
+
+        <h1 align="center" class="corTitulo" id="sobre">Sobre</h1>
+
         <div class="topic-text">
-          <h1 class="corTitulo">ODS - 5</h1>
+
+
+          <h1 class="corTitulo mt-5">ODS - 5</h1>
         </div>
-        <p>Vamos falar um pouco de oportunidades?</p>
+
         <form action="#">
           <div class="mt-3">
-            <p> Uma mulher vivendo, hoje, em um país em desenvolvimento, certamente tem um futuro com mais oportunidades do que tiveram sua mãe e sua avó. Afinal, vários são os aspectos que estão melhores para as mulheres no século XXI. Mais garotas estão na escola do que nunca antes. A população está um pouco mais longe da miséria: entre 1995 e 2015, a porcentagem de pessoas vivendo em extrema pobreza caiu 26% no mundo. Neste mesmo período, a proporção de mulheres que se casaram quando crianças diminuiu 15%, de uma em cada quatro para aproximadamente uma em cada cinco.</p>
+            <p align="justify"> 5.1 Acabar com todas as formas de discriminação contra todas as mulheres e meninas em todas
+              partes. <br> 5.5 Garantir a participação plena e efetiva das mulheres e a igualdade de oportunidades para a
+              liderança em todos os níveis de tomada de decisão na vida política, econômica e pública</p>
           </div>
 
         </form>
       </div>
-      <div class="right-side">
+      <div class="right-side mt-5">
 
         <img src="../../assets/img/ods.png" alt="" width="220px" height="220px">
       </div>
     </div>
+    <!--primeiro-->
 
-    <!--terceiro-->
+    <!--segunda-->
     <div class="contentContato mt-5">
 
       <div class="">
@@ -76,44 +83,29 @@
 
       <div class="right-side">
         <div class="topic-text">
-          <h1 class="corTitulo">De onde viemos e pra onde queremos ir</h1>
+          <h1 class="corTitulo mt-2">A rede social Delas</h1>
         </div>
         <form action="#">
           <div class="mt-3">
-            <p>Segundo dados da Associação Brasileira das Empresas de Tecnologia da Informação e Comunicação (Brasscom), a proporção de empregos no setor é 37% de mulheres para 63% de homens. Quando observadas as funções técnicas, a distância aumenta, sendo 23,9% de mulheres para 76,1% de homens.</p>
+            <p align="justify">Pensando nesses objetivos de desenvolvimento sustentável, nossa rede social chega para
+              facilitar a conexão de mulheres, aumentar o engajamento, visibilidade, e ajudar cada uma Delas em sua
+              própria jornada.</p>
           </div>
         </form>
       </div>
-      
     </div>
 
-    <!--terceiro-->
+    <!-- botão scroll topo -->
+    <div class="icone">
+      <a href="#home">
+        <i class="fas fa-arrow-up text-dark"></i>
+      </a>
+    </div>
+    <!-- botão scroll topo -->
 
-      <!--segundo-->
-      <div class="contentContato mt-5">
-        
-        <div class="right-side">
-          <div class="topic-text">
-            <h1 class="corTitulo">Delas </h1>
-          </div>
-          <p>Conectando mulheres e oportunidades</p>
-          <form action="#">
-            <div class="mt-3">
-              <p>Pensando em tudo nisso, nossa rede social chega para facilitar a conexão dessas mulheres, aumentar o engajamento, visibilidade, e ajudar cada uma Delas em sua própria jornada.</p>
-            </div>
-  
-          </form>
-        </div>
-        <div class="">
-  
-          <img src="../../assets/img/home2.jpeg" alt="" width="220px" height="220px">
-        </div>
-      </div>
-      <!--segundo-->
-
+    <!--segundo-->
   </div>
 </div>
-
 <!--primeiro-->
 
 
@@ -127,83 +119,105 @@
 
 
 <!--equipe-->
-<h1 class="text-center mt-5 corTitulo">Conheça nossa equipe</h1>
-<div class="row mt-5" id="equipe">
-  <!--perfil victoria-->
-  <div class="container-fluid d-flex flex-wrap">
-    <div class="div col-md-2"></div>
-    <div class="col-md-3">
-      <div class="cardVic me-5">
-        <div class="card-body">
-          <h2 class="card-title">Victória Alves</h2>
-          <p>Desenvolvedora FullStack Ama codificar, é criativa, determinada e uma das criadoras da rede Delas</p>
-          <a href="https://www.linkedin.com/in/vicalvessantos/" title='linkedin' target="_blank">
-            <i class="fab fa-linkedin me-4"></i>
-          </a>
-          <a href="https://github.com/VictoriaAlvess" title='github' target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
+<div class="row" id="equipe">
+<h1 class="text-center  corTitulo">Conheça nossa equipe</h1>
+<div class="container-fluid d-flex flex-wrap ms-4 mt-5">
+ 
+  <!--Gabriela-->
+
+  <div class="col-3">
+    <div class="cardVic fotoGabi">
+      <div class="card-body">
+        <h3 class="card-title">Gabriela Gomes</h3>
+        <p align="justify">Desenvolvedora Full Stack <br>Criadora da rede social Delas<br><br></p>
+        <a href="https://www.linkedin.com/in/ggsgabi/" title='linkedin' target="_blank">
+          <i class="fab fa-linkedin me-4"></i></a>
+        <a href="https://github.com/gabrielagsoares" title='github' target="_blank">
+          <i class="fab fa-github me-4"></i>
+        </a>
+        <a href="https://drive.google.com/file/d/1ycpf9MGRw3-_GbbhbrhWBGxLabzTQZho/view?usp=sharing" title='curriculo' target="_blank">
+          <i class=" curriculo far fa-file"></i><br><br>
+        </a>
       </div>
     </div>
-    <!--victoria-->
+  </div>
+  <!--gabriela-->
 
     <!--perfil marcos-->
-    <div class="col-md-3 ">
+    <div class="col-3">
       <div class="cardVic fotoMarcos">
-        <div class="card-body">
+        <div class="card-body ">
           <h2 class="card-title">Marcos Daniel</h2>
-          <p>Desenvolvedor FullStack Comunicador nato, adora trabalhar em equipe, e um dos criadores da rede Delas </p>
-          <a href="http://www.linkedin.com/in/marcos-0" title='linkedin' target="_blank">
+          <p align="justify">Desenvolvedor Full Stack <br>Criador da rede social Delas<br><br></p>
+          <a href="http://www.linkedin.com/in/marcos-0 "   title='linkedin' target="_blank">
             <i class="fab fa-linkedin me-4"></i>
           </a>
           <a href="https://github.com/marcosphd" title='github' target="_blank">
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github me-4"></i>
+          </a>
+          <a class="curriculo" href="https://drive.google.com/file/d/1v6Twrc_g-hu0MjGizBkYkuGUFWYboGMk/view?usp=sharing" title='curriculo' target="_blank">
+            <i class="far fa-file"></i><br><br>
           </a>
 
         </div>
       </div>
     </div>
     <!--marcos-->
-  </div>
 
-  <div class="container fluid-text-wrap row mt-5">
-    <!--Gabriela-->
+    
 
-    <div class="col-md-3"></div>
-    <div class="col-md-4 container-fluid d-flex flex-wrap">
-      <div class="cardVic fotoGabi me-5">
-        <div class="card-body">
-          <h2 class="card-title">Gabriela Gomes</h2>
-          <p>Desenvolvedora FullStack Apaixonada por desafios e inovação, e uma das criadoras da rede Delas</p>
-          <a href="https://www.linkedin.com/in/ggsgabi/" title='linkedin' target="_blank">
-            <i class="fab fa-linkedin me-4"></i></a>
-          <a href="https://github.com/gabrielagsoares" title='github' target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!--gabriela-->
-
+    
     <!--pedro-->
 
-    <div class="col-md-4">
+    <div class="col-3">
       <div class="cardVic fotoPedro">
         <div class="card-body">
-          <h2 class="card-title">Pedro</h2>
-          <p>Desenvolvedor FullStack Focado, objetivo e um dos criadores da rede Delas</p>
+          <h2 class="card-title">Pedro Silva</h2>
+          <p align="justify">Desenvolvedor Full Stack <br>Criador da rede social Delas<br><br></p>
           <a href="https://www.linkedin.com/in/pedro-silva-919799169/" title='linkedin' target="_blank">
             <i class="fab fa-linkedin me-4"></i></a>
           <a href="https://github.com/pedro123483"  title='github' target="_blank">
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github me-4"></i>
+          </a>
+          <a class="curriculo" href="" title='curriculo' target="_blank">
+            <i class="far fa-file"></i><br><br>
           </a>
         </div>
       </div>
     </div>
     <!--pedro-->
+
+    <!--perfil victoria-->
+
+    <div class="col-3">
+      <div class="cardVic ">
+        <div class="card-body">
+          <h2 class="card-title">Victória Alves</h2>
+          <p align="justify">Desenvolvedora Full Stack <br>Criadora da rede social Delas<br><br></p>
+          <a href="https://www.linkedin.com/in/vicalvessantos/" title='linkedin' target="_blank">
+            <i class="fab fa-linkedin me-4"></i>
+          </a>
+          <a href="https://github.com/VictoriaAlvess" title='github' target="_blank">
+            <i class="fab fa-github me-4"></i>
+          </a>
+          <a class="curriculo" href="" title='curriculo' target="_blank">
+            <i class="far fa-file"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- botão scroll topo -->
+    <div class="icone">
+      <a href="#home">
+        <i class="fas fa-arrow-up text-dark"></i>
+      </a>
+    </div>
+    <!-- botão scroll topo -->
+    <!--victoria-->
   </div>
 </div>
+
+<!-- /equipe -->
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
   <path fill="#370A37" fill-opacity="1"
@@ -219,8 +233,9 @@
         <h4>Sobre nós</h4>
         <ul>
 
-          <li class=""><a href="#"> Uma vitrine interativa para divulgação do trabalho de mulheres múltiplas periféricas no mercado empreendedor </a></li>
-         
+          <li class=""><a href="#"> Uma vitrine interativa para divulgação do trabalho de mulheres múltiplas periféricas
+              no mercado empreendedor </a></li>
+
 
         </ul>
       </div>

@@ -16,9 +16,8 @@
                               <img src="https://images.pexels.com/photos/5685865/pexels-photo-5685865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                               alt="">
                               <div class="text">
-                                  <span class="text-1">Ei, mulher, vamos subir mais um degrau?<br> só mais um
-                                      passo</span>
-                                  <span class="text-2">Vamos começar!</span>
+                                  <span class="text-1"> Ei consumidore, <br> Pronte para embarcar <br> nesse mundo de soluções?</span> <br>
+                                  <span class="text-2"> Vem com a gente!</span>
                               </div>
                           </div>
                       </div>
@@ -36,8 +35,8 @@
                                           </div>
                                           
                                           <div class="col-md-5">
-                                            <label for="inputEmail" class="form-label">Email</label>
-                                            <input [(ngModel)]='usuario.email'  type="email" name="email" class="form-control" id="emailConsu" placeholder="Digite seu email">
+                                            <label for="inputEmail" class="form-label">E-mail</label>
+                                            <input [(ngModel)]='usuario.email'  type="email" name="email" class="form-control" id="emailConsu" placeholder="Digite seu e-mail">
                                           </div>
 
                                           <div class="col-md-6 me-4">
@@ -45,26 +44,26 @@
                                               <input [(ngModel)]='usuario.dataNasc' type="date" name="dataNasc" class="form-control" id="dataNascConsu">
                                             </div>
 
-                                            <div class="col-md-6 me-4">
-                                              <label for="inputGenero" class="form-label pt-2">Genero</label>
+                                            <div class="col-md-5">
+                                              <label for="inputGenero" class="form-label pt-2">Gênero</label>
                                               <select id="generoConsu" class="form-select" name="genero" (change)='generos($event)'>
                                                 <option selected>Selecione</option>
-                                                <option>Mulher cisgenero</option>
-                                                <option>Mulher trânsgenero</option>
-                                                <option>Homen cisgenero</option>
-                                                <option>Homen transgenero</option>
+                                                <option>Mulher cisgênero</option>
+                                                <option>Mulher transgênero</option>
+                                                <option>Homem cisgênero</option>
+                                                <option>Homem transgênero</option>
                                               </select>
                                             </div>
 
-                                            <div class="col-md-5">
-                                              <label for="inputUsuario" class="form-label">Usuário</label>
+                                            <div class="col-md-6 me-4">
+                                              <label for="inputUsuario" class="form-label pt-2">Usuário</label>
                                               <input [(ngModel)]='usuario.usuario' type="text" class="form-control" name="usuario" id="usuarioConsu" placeholder="Digite seu usuario">
                                             </div>
                                             
                                             
-                                          <div class="col-md-6 me-4">
-                                            <label for="inputUrlPerfil" class="form-label pt-2">Link foto perfil</label>
-                                            <input [(ngModel)]='usuario.fotoPerfil'  type="text" class="form-control" id="urlFotoConsu" name="urlFoto" placeholder="Insira sua foto">
+                                          <div class="col-md-5">
+                                            <label for="inputUrlPerfil" class="form-label pt-2">Foto do perfil</label>
+                                            <input [(ngModel)]='usuario.fotoPerfil'  type="text" class="form-control" id="urlFotoConsu" name="urlFoto" placeholder="Link da foto">
                                           </div>
 
                                             <div class="col-12">
@@ -79,12 +78,12 @@
 
                                             <div class="col-md-5">
                                                 <label for="inputConfirmarSenha" class="form-label pt-2">Confirmar senha</label>
-                                                <input [(ngModel)]='usuario.senha'  type="password" class="form-control" name="confirmSenha" id="confirmSenhaConsu" placeholder="Confirme sua senha">
+                                                <input [(ngModel)]='usuario.senha'  type="password" class="form-control" name="confirmSenha" id="confirmSenhaConsu" placeholder="Senha">
                                               </div>
 
-                                              <label for="inputTipoUser" class="form-label pt-2">Selecione seu tipo de usuário</label>
+                                              <label for="inputTipoUser" class="form-label pt-2">Tipo de usuário</label>
                                               <select id="tipoUser" class="form-select" name="tipoUser" (change)='tipoUser($event)'>
-                                                <option selected>Selecione</option>
+                                                <option selected>Selecione a opção desejada</option>
                                                 <option>Consumidore</option>
                                               </select>
                                                 

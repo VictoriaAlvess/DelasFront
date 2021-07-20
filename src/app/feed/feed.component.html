@@ -56,23 +56,23 @@
                <div class="form-group p-0 m-0">
                   <label for="texto"></label>
                   <textarea [(ngModel)]='postagem.textoPost' name="texto" id="texto" class="form-control" rows="3"
-                     placeholder="Ei,mulher divulgue seu trabalho aqui">
+                     placeholder=" Ei mulher, divulgue seu trabalho aqui!">
                   </textarea>
                </div>
             </div>
 
             <div class="col-md-11 p-0 m-0">
                <div class="form-group mt-2">
-                  <label for="titulo">Link da foto:</label>
-                  <input [(ngModel)]='postagem.fotoPost' type="text" class="form-control" id="fotoPost">
+                  <label for="titulo">Foto:</label>
+                  <input [(ngModel)]='postagem.fotoPost' type="text" class="form-control" id="fotoPost" placeholder=" Link da foto">
                </div>
             </div>
 
 
             <div class="col-md-11 p-0 m-0">
                <div class="form-group mt-2">
-                  <label for="tema">Escolha uma categoria
-                     <a *ngIf="authService.adm()" routerLink='/tema' data-bs-dismiss="modal">Cadastre um novo</a>: </label>
+                  <label for="tema">Selecione a categoria
+                     <a *ngIf="authService.adm()" routerLink='/tema' data-bs-dismiss="modal">Cadastre uma nova</a>: </label>
                   <select name="tema" id="tema" class="form-control" [(ngModel)]='idTema' (change)='findByIdTemas()'>
                      <option *ngFor='let tema of listaTemas' value="{{tema.id}}"> {{tema.categorias}}
                      </option>
@@ -119,7 +119,7 @@
                                     <a href="">{{usuario.nome}}</a> <small></small></span>
                               </div>
 
-                              <div class="timeline-content" *ngFor='let item of listaPostagens'>
+                              <div class="timeline-content quebraLinha" *ngFor='let item of listaPostagens'>
                                  <p>
                                     {{item.textoPost}}
                                  </p>

@@ -11,7 +11,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #7d2ae8;
+  background: #370A37;
   padding: 30px;
 }
 .container{
@@ -39,7 +39,7 @@ body{
   position: absolute;
   height: 100%;
   width: 100%;
-  background: hsl(266, 85%, 63%);
+  background: linear-gradient(rgba(48, 20, 54, 0.75),rgba(128, 87, 136, 0.75));
   opacity: 0.5;
   z-index: 100;
 }
@@ -48,7 +48,7 @@ body{
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #7d2ae8;
+  background:#370A37;
   opacity: 0.5;
   z-index: 100;
   transform: rotateY(180deg);
@@ -121,7 +121,7 @@ form .form-content .title:before{
   bottom: 0;
   height: 3px;
   width: 25px;
-  background: #7d2ae8;
+  background: #370A37;
 }
 form .signup-form  .title:before{
   width: 20px;
@@ -150,11 +150,11 @@ form .form-content .input-box{
 }
 .form-content .input-box input:focus,
 .form-content .input-box input:valid{
-  border-color: #7d2ae8;
+  border-color: #370A37;
 }
 .form-content .input-box i{
   position: absolute;
-  color: #7d2ae8;
+  color: #370A37;
   font-size: 17px;
 }
 form .form-content .text{
@@ -174,17 +174,17 @@ form .form-content .button{
 }
 form .form-content .button input{
   color: #fff;
-  background: #7d2ae8;
+  background: #370A37;
   border-radius: 6px;
   padding: 0;
   cursor: pointer;
   transition: all 0.4s ease;
 }
 form .form-content .button input:hover{
-  background: #5b13b9;
+  background: #370A37;
 }
 form .form-content label{
-  color: #5b13b9;
+  color: #370A37;
   cursor: pointer;
 }
 form .form-content label:hover{

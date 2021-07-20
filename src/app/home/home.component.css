@@ -4,12 +4,16 @@
   padding: 0;
 }
 
+a{
+  text-decoration: none;
+}
+
 
 
 .banner {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(128, 87, 136, 0.75),rgba(128, 87, 136, 0.75)),url(../../assets/img/mulheres2.jpg);
+  background-image: linear-gradient(rgba(48, 20, 54, 0.75),rgba(128, 87, 136, 0.75)),url(../../assets/img/mulheres2.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -62,11 +66,11 @@ margin-right: auto;
   content: '';
   height: 3px;
   width: 0%;
-  background: #370A37;
+  background: #e91ee9;
   position: absolute;
   left: 0;
   bottom: -10px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .navbar ul li:hover::after {
@@ -107,7 +111,7 @@ button {
   padding: 15px 0;
   text-align: center;
   margin: 20px 10px;
-  border-radius: 25px;
+  border-radius: 10px;
   font-weight: bold;
   border: 2px solid #370A37;
   background: #370A37;
@@ -157,16 +161,18 @@ background: #13181c;
 }
 
 .cardVic{
-max-width: 35ch;
-padding: clamp(1.5rem, 20vh, 10rem) 0 0;
-background-image: url(https://scontent.fcgh10-1.fna.fbcdn.net/v/t1.6435-9/125184464_3471471986303560_5722270262524546847_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeHJQcd4vm79RlCSB56pCa54t9IFBpwP3F230gUGnA_cXSpJ3UricZ9fI1bkpNnucd1exy0qKasK72fSeYzFpxkT&_nc_ohc=VRFyfes2Aj8AX83eJBk&_nc_ht=scontent.fcgh10-1.fna&oh=2a26d11710dabc6376d4bac023f14f43&oe=60EEC51D);
-background-size: cover;
-color: white;
-box-shadow: 0 1em 2em rgb(0 0 0 / 0.2);
-transition: transform ease 250ms;
-border-radius: 0.5rem;
-overflow: hidden;
-}
+  max-width: 35ch;
+  padding: clamp(1.5rem, 20vh, 10rem) 0 0;
+  background-image: url(../../assets/img/vic-foto.jpg);
+  background-size: cover;
+  color: white;
+  box-shadow: 0 1em 2em rgb(0 0 0 / 0.2);
+  transition: transform ease 250ms;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 280px;
+  height: 350px;
+  }
 
 .card {
   max-width: 35ch;
@@ -225,7 +231,7 @@ margin-bottom: 1.25em;
   top: 100%;
   height: 3px;
   width: calc(100% + 1.5rem);
-  background: purple;
+  background: #370A37;
   transform: scaleX(0);
   transition: transform 200ms ease;
   transform-origin: left;
@@ -245,7 +251,7 @@ text-transform: uppercase;
 display: inline-block;
 text-decoration: none;
 color: black;
-background: purple;
+background:#370A37;
 padding: 0.5em 1.25em;
 border-radius: 0.25rem;
 }
@@ -375,7 +381,7 @@ cursor: pointer;
 transition: all 0.3s ease;
 }
 .button input[type="button"]:hover{
-background: #5029bc;
+background: transparent;
 }
 
 @media (max-width: 950px) {
@@ -414,19 +420,25 @@ background: #5029bc;
 
 .fotoMarcos{
 
-background-image: url(https://i.imgur.com/C6EQOCo.jpg);
-
-}
-
-.fotoGabi{
-
-background-image: url(../../assets/img/gabi-foto.jpeg);
-}
-
-.fotoPedro{
-
-background-image: url(https://i.imgur.com/kOuN8qe.jpg);
-}
+  background-image: url(https://i.imgur.com/C6EQOCo.jpg);
+  width: 285px;
+  height: 350px;
+  
+  }
+  
+  .fotoGabi{
+  
+  background-image: url(../../assets/img/gabi-foto.jpeg);
+  width: 285px;
+  height: 350px;
+  }
+  
+  .fotoPedro{
+  
+  background-image: url(https://i.imgur.com/kOuN8qe.jpg);
+  width: 285px;
+  height: 350px;
+  }
 
 .fab{
 
@@ -488,7 +500,7 @@ content: '';
 position: absolute;
 left:0;
 bottom: -10px;
-background-color: #e91e63;
+background-color: #e91ee9;
 height: 2px;
 box-sizing: border-box;
 width: 50px;
@@ -545,4 +557,15 @@ background-color: #ffffff;
 
 .corTitulo{
 color:#610359;
+}
+
+.icone{
+  font-size: 40px;
+  align-items: right;
+  justify-content: right;
+}
+
+.curriculo{
+  font-size: 24px;
+  color:darkmagenta;
 }

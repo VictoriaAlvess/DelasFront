@@ -166,8 +166,9 @@ body{
     list-style-type: none;
     margin: -10px 0 0;
     padding: 0 0 0 140px;
-    white-space: nowrap;
-    border-radius: 0
+    white-space: wrap;
+    border-radius: 0;
+    max-width: 700px;
 }
 
 .text-ellipsis,
@@ -430,9 +431,10 @@ select.form-control:not([size]):not([multiple]) {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position: relative
+    position: center;
+    
 }
-/* 
+ /*
 .timeline:before {
     content: '';
     position: absolute;
@@ -920,3 +922,7 @@ select.form-control:not([size]):not([multiple]) {
   textarea{
     resize: none;
   }
+
+  .quebraLinha{
+    width: 700px;
+    }
