@@ -979,3 +979,8 @@ select.form-control:not([size]):not([multiple]) {
   background-color: transparent;
   color: #370A37
   }
+
+  .fotoPost{
+    width: 400px;
+    height: 400px;
+}

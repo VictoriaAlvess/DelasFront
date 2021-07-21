@@ -130,7 +130,7 @@ export class FeedComponent implements OnInit {
     this.postagem.temas = this.tema
 
     this.usuario.id = this.idUser
-    this.postagem.usuario = this.usuario
+    this.postagem.usuarios = this.usuario
 
     this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem)=>{
        this.postagem = resp
@@ -143,8 +143,6 @@ export class FeedComponent implements OnInit {
 
   }
 
-  cancelar(){
-    
-  }
+  
 
 }

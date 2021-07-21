@@ -51,26 +51,19 @@
                                     <span class="username">
                                        <a href="">{{usuario.nome}}</a> <small></small></span>
                                  </div>
-                              <div class="timeline-content quebraLinha">
+                              <div class="timeline-content quebraLinha mt-5" *ngFor="let item of usuario.postagens">
                                  <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa quos, repellendus omnis sequi magnam quam corrupti aliquam aperiam quidem possimus minima veritatis provident, soluta commodi dolorum dolorem ad. Inventore!
+                                   {{item.textoPost}}
                                  </p>
-                                 <img class="fotoPost" src="" alt="">
+                                 <img class="fotoPost mt-3" src="{{item.fotoPost}}" alt="">
                               
                               <div class="timeline-likes">
 
-                                 <div class="stats">
-                                    <span class="fa-stack fa-fw stats-icon">
-                                       <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                       <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                    <span class="stats-total">quantidade de likes</span>
+                                 <div class="stats mt-3">
+                                    <span>{{item.dataPost | date: 'dd/MM/yyyy'}} às {{item.dataPost | date: 'HH:mm'}}</span>
                                  </div>
                               </div>
-                              <div class="timeline-footer">
-                                 <a href="" class="m-r-15 text-inverse-lighter">
-                                    <i class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i>Curtir</a>
-                              </div>
+                              
 
                               
                               </div>

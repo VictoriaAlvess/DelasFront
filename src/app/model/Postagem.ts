@@ -7,7 +7,7 @@ export class Postagem {
     public curtidas: number;
     public textoPost: string;
     public dataPost: Date;
-    public usuario: Usuario; //duvida relacionamento
+    public usuarios: Usuario; 
     public temas: Temas;
 
 }

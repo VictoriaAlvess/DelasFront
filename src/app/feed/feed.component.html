@@ -114,18 +114,19 @@
                         <li class="p-100">
                            <!-- begin timeline-body -->
                            <div class="timeline-body">
-                              <div class="timeline-header">
-                                 <span class="userimage">
-                                    <img src="{{usuario.fotoPerfil}}" alt=""></span>
-                                 <span class="username">
-                                    <a href="">{{usuario.nome}}</a> <small></small></span>
-                              </div>
-
+                              
                               <div class="timeline-content quebraLinha" *ngFor='let item of listaPostagens'>
+                                 <div class="timeline-header">
+                                    <span class="userimage">
+                                       <img src="{{item.usuarios.fotoPerfil}}" alt=""></span>
+                                    <span class="username mt-5"> 
+                                       <a href="">{{item.usuarios.nome}}</a> <small></small></span>
+                                 </div>
+   
                                  <p>
                                     {{item.textoPost}}
                                  </p>
-                                 <img class="fotoPost" src="{{item.fotoPost}}" alt="">
+                                 <img class="fotoPost mt-3" src="{{item.fotoPost}}" alt="">
                               
                               <div class="timeline-likes">
 
