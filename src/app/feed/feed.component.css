@@ -933,21 +933,22 @@ select.form-control:not([size]):not([multiple]) {
     width: 700px;
     }
     
-/* Botão caixa post */
-button {
+
+    
+/* button {
     width: 100px;
     padding: 3px 0;
     text-align: center;
     margin: 20px 10px;
     border-radius: 10px;
-    /* font-weight: bold; */
+    font-weight: bold;
     border: 2px solid #370A37;
     background: #370A37;
     color: #fff;
     cursor: pointer;
     position: relative;
     overflow: hidden;
-  }
+  } */
 
 
   button {
@@ -965,10 +966,10 @@ button {
     overflow: hidden;
   }
 
-  button:hover span {
+  /* button:hover span {
     border: none;
     width: 100%;
-  }
+  } */
   
   button:hover {
   background-color: transparent;

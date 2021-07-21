@@ -24,6 +24,7 @@ import { PerfilEditComponent } from './edit/perfil-edit/perfil-edit.component';
 import { CadastrarConsumidoreComponent } from './cadastrar-consumidore/cadastrar-consumidore.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { AlertasComponent } from './alertas/alertas.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 
 
@@ -51,7 +52,8 @@ import { AlertasComponent } from './alertas/alertas.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ModalModule.forRoot()
   ],
   providers: [{
     provide: LocationStrategy,

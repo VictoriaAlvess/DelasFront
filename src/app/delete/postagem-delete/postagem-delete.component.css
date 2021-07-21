@@ -1,0 +1,29 @@
+font{
+    color: #370A37;
+    
+}
+
+button {
+    width: 100px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 10px;
+    /* font-weight: bold; */
+    border: 2px solid #370A37;
+    background: #370A37;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* button:hover span {
+    border: none;
+    width: 100%;
+  } */
+  
+  button:hover {
+  background-color: transparent;
+  color: #370A37
+  }

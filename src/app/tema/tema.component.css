@@ -1,8 +1,25 @@
 .bg-tema{
-    background: rgb(55,10,55);
-    background: linear-gradient(0deg, rgba(55,10,55,1) 0%, rgba(104,65,143,1) 86%, rgba(119,82,171,1) 97%, rgba(128,92,186,1) 100%, rgba(133,97,194,1) 100%, rgba(147,112,219,1) 100%);
+    background: #370A37;
 }
 
-.bg-tema2{
-    background-color: #d8d8d8;
-}
+
+button {
+    width: 100px;
+    padding: 3px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 10px;
+    /* font-weight: bold; */
+    border: 2px solid #fff;
+    background:#ffff;
+    color:  #370A37;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  
+  button:hover {
+  background-color: transparent;
+  color: #d8bfd8;
+  }

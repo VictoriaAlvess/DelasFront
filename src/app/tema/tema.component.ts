@@ -27,7 +27,8 @@ export class TemaComponent implements OnInit {
     window.scroll(0,0)
 
     if(environment.token == ''){
-      this.router.navigate(['/entrar'])
+      this.alertas.showAlertInfo('Sua sessão expirou, faça o login novamente.')
+      this.router.navigate(['/logar'])
     }
     this.findAllTemas()
   }
