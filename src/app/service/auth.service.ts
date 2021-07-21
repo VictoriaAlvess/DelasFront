@@ -32,6 +32,10 @@ export class AuthService {
     return this.http.get<Usuario>(`https://delasbackend.herokuapp.com/usuarios/${id}`, this.token)
   }
 
+  putUsuario(usuario: Usuario): Observable<Usuario>{
+    return this.http.put<Usuario>('https://delasbackend.herokuapp.com/usuarios/alterar', usuario, this.token)
+  }
+
   adm(){
     let ok : boolean = false;
     if(environment.tipoUser == 'adm'){

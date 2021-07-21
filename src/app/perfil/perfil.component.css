@@ -16,7 +16,7 @@
   }
   
   .corRoxa {
-  background-color: #d5baf5;
+  background-color: #d8bfd8;
   min-height: 100vh;
 
   }
@@ -936,4 +936,46 @@ select.form-control:not([size]):not([multiple]) {
     border-radius: 15px;
     padding: 50px 50px 50px 50px;
     box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.2);
+  }
+
+
+  button {
+    width: 100px;
+    padding: 3px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 10px;
+    /* font-weight: bold; */
+    border: 2px solid #370A37;
+    background: #370A37;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  button {
+    width: 100px;
+    padding: 3px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 10px;
+    /* font-weight: bold; */
+    border: 2px solid #370A37;
+    background: #370A37;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  button:hover span {
+    border: none;
+    width: 100%;
+  }
+  
+  button:hover {
+  background-color: transparent;
+  color: #370A37
   }

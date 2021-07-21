@@ -1,0 +1,8 @@
+.bg-tema{
+    background: rgb(55,10,55);
+    background: linear-gradient(0deg, rgba(55,10,55,1) 0%, rgba(104,65,143,1) 86%, rgba(119,82,171,1) 97%, rgba(128,92,186,1) 100%, rgba(133,97,194,1) 100%, rgba(147,112,219,1) 100%);
+}
+
+.bg-tema2{
+    background-color: #d8d8d8;
+}

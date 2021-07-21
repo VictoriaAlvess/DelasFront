@@ -561,8 +561,16 @@ color:#610359;
 
 .icone{
   font-size: 40px;
-  align-items: right;
-  justify-content: right;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.icone2{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
 }
 
 .curriculo{
@@ -570,14 +578,3 @@ color:#610359;
   color:darkmagenta;
 }
 
-.navbar-fixed-top {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  z-index: 1030;
-  box-sizing: border-box;
-  background-position: 100%;
-  background-size: cover;
-  
-}

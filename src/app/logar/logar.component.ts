@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { UserLogin } from '../model/UserLogin';
 import { Usuario } from '../model/Usuario';
+import { AlertasService } from '../service/alertas.service';
 import { AuthService } from '../service/auth.service';
 
 @Component({
@@ -21,7 +22,8 @@ export class LogarComponent implements OnInit {
 
   constructor(
     private authService : AuthService, //injeção de dependencia
-    private router: Router
+    private router: Router,
+    private alertas: AlertasService
   ) { }
 
   ngOnInit() {
@@ -46,14 +48,14 @@ export class LogarComponent implements OnInit {
     this.usuario.tipoUser = this.tipoUsuario
 
     if(this.usuario.senha != this.confirmarSenha){
-      alert('As senhas estão incorretas!')
+      this.alertas.showAlertDanger('As senhas estão incorretas!')
       console.log(this.usuario)
     } else {
       this.authService.cadastrar(this.usuario).subscribe((resp: Usuario)=>{
         this.usuario = resp
         console.log(this.usuario)
         this.router.navigate(['/logar'])
-        alert('Usuário cadastrado com sucesso!')
+        this.alertas.showAlertSuccess('Usuário cadastrado com sucesso!')
       })
     }
   }
@@ -70,7 +72,7 @@ export class LogarComponent implements OnInit {
       this.router.navigate(['/feed'])
     }, erro =>{
       if(erro.status == 500){
-        alert('Usuário ou senha estão incorretos!')
+        this.alertas.showAlertDanger('Usuário ou senha estão incorretos!')
       }
     })
   }

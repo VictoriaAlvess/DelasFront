@@ -2,7 +2,9 @@
     <div class="col-md-12 mx-auto ">
         <!-- Profile widget -->
         <div class="bg-white shadow rounded overflow-hidden ">
-            
+      
+
+         
          <div class="bg-white shadow rounded overflow-hidden mt-2 " >
               <button class="btn btn-outline-dark ms-3 me-2" routerLink='/feed'>Feed</button>
                <button  class="btn btn-outline-dark ms-3" [routerLink]="['/perfil-edit', id]"
@@ -15,7 +17,7 @@
                         <!-- <img src="../../assets/img/gabi-foto.jpeg" alt="..." width="300" height="400"
                             class="rounded mb-2 img-thumbnail "> -->
 
-                            <img src="{{usuario.fotoPerfil}}" class="rounded-circle" alt="foto-perfil" width="200" height="200">
+                            <img src="{{usuario.fotoPerfil}}"  class="rounded-circle"  alt="foto-perfil" width="200px" height="200px">
                         </div>
 
                     <div class="media-body mb-5 text-white">
@@ -26,12 +28,6 @@
         </div>
     </div>
 
-
-
-
-
-    <!--Inicio minhas postagens-->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <div class="container">
    <div class="row">
       <div class="col-md-12">
@@ -46,21 +42,20 @@
                   <div class="tab-pane fade active show" id="profile-post">
                      <!-- begin timeline -->
                      <ul class="timeline">
-                        <li>
+                        <li class="p-100">
                            <!-- begin timeline-body -->
                            <div class="timeline-body">
-                              <div class="timeline-header">
-                                 <span class="userimage">
-                                    <img src="../../assets/img/vic-foto.jpg" alt=""></span>
-                                 <span class="username">
-                                    <a href="">VictoriaAlves</a> <small></small></span>
-                              </div>
-
-                              <div class="timeline-content">
+                                 <div class="timeline-header"  >
+                                    <span class="userimage">
+                                       <img src="{{usuario.fotoPerfil}}" alt=""></span>
+                                    <span class="username">
+                                       <a href="">{{usuario.nome}}</a> <small></small></span>
+                                 </div>
+                              <div class="timeline-content quebraLinha">
                                  <p>
-                                    Olá, sou a empreendedora VictoriaAlves, vendo muitos produtos de beleza para cabelos cacheados/crespos, venham conferir!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa quos, repellendus omnis sequi magnam quam corrupti aliquam aperiam quidem possimus minima veritatis provident, soluta commodi dolorum dolorem ad. Inventore!
                                  </p>
-                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3lc0QMdxrnb_FjqUP62-CZb1twXa9Dt33kA&usqp=CAU" alt="">
+                                 <img class="fotoPost" src="" alt="">
                               
                               <div class="timeline-likes">
 
@@ -73,54 +68,12 @@
                                  </div>
                               </div>
                               <div class="timeline-footer">
-                                 <a href="" class="m-r-15 text-inverse-lighter"><i
-                                       class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i>Curtir</a>
-                              </div>
-
-                              <div>
-                                 <button type="button" class="btn btn-outline-dark me-4 my-2">Editar </button>
-                                 <a  type="button" class="btn btn-outline-dark">Apagar</a>
-                              </div>
+                                 <a href="" class="m-r-15 text-inverse-lighter">
+                                    <i class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i>Curtir</a>
                               </div>
 
                               
-                            <hr>
-                            <br>
-                              <div class="timeline-header">
-                                <span class="userimage">
-                                   <img src="../../assets/img/vic-foto.jpg" alt=""></span>
-                                <span class="username">
-                                   <a href="">VictoriaAlves</a> <small></small></span>
-                             </div>
-
-                            
-                              <div class="timeline-content mt-2">
-                                <p>
-                                Hoje tem promoção!! Venham conferir!!
-                                </p>
-                                <img src="https://i.pinimg.com/236x/fe/30/43/fe3043adbd9e4756376e9ee499768513.jpg" alt="">
-                             
-                             <div class="timeline-likes">
-
-                                <div class="stats">
-                                   <span class="fa-stack fa-fw stats-icon">
-                                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                      <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
-                                   </span>
-                                   <span class="stats-total">quantidade de likes</span>
-                                </div>
-                             </div>
-                             <div class="timeline-footer">
-                                <a href="" class="m-r-15 text-inverse-lighter"><i
-                                      class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i>Curtir</a>
-                             </div>
-
-                             <div>
-                                <button type="button" class="btn btn-outline-dark me-4 my-2">Editar </button>
-                                <a  type="button" class="btn btn-outline-dark">Apagar</a>
-                             </div>
-                             </div>
-
+                              </div>
                            </div>
                      </ul>
                   </div>
@@ -129,6 +82,4 @@
          </div>
       </div>
    </div>
-</div>
-    <!--Fim minhas postagens-->
 </div>

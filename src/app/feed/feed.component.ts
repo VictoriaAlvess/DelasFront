@@ -5,6 +5,7 @@ import { environment } from 'src/environments/environment.prod';
 import { Postagem } from '../model/Postagem';
 import { Temas } from '../model/Temas';
 import { Usuario } from '../model/Usuario';
+import { AlertasService } from '../service/alertas.service';
 import { AuthService } from '../service/auth.service';
 import { PostagemService } from '../service/postagem.service';
 import { TemaService } from '../service/tema.service';
@@ -37,7 +38,8 @@ export class FeedComponent implements OnInit {
     private router: Router,
     private temaService: TemaService,
     public authService: AuthService,
-    private postagemService: PostagemService
+    private postagemService: PostagemService,
+    private alertas: AlertasService
 
   ) { }
 
@@ -47,7 +49,7 @@ export class FeedComponent implements OnInit {
     this.sidebar()
 
     if(environment.token == ''){
-      alert('Sua sessão expirou, faça o login novamente.')
+      this.alertas.showAlertInfo('Sua sessão expirou, faça o login novamente.')
       this.router.navigate(['/logar'])
     }
 
@@ -132,7 +134,7 @@ export class FeedComponent implements OnInit {
 
     this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem)=>{
        this.postagem = resp
-       alert('Postagem realizada com sucesso! ✔️')
+       this.alertas.showAlertSuccess('Postagem realizada com sucesso! ✔️')
        this.postagem = new Postagem()
        this.getAllPostagens()
      })

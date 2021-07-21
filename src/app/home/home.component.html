@@ -2,14 +2,15 @@
 
   <div class="banner" id="home">
 
-    <div class="navbar  navbar-default navbar-fixed-top">
+    <div class="navbar">
       <!--//Logo do Delas linha 9 -->
       <div class="navLeft">
         <ul>
           <a> <img src="../../assets/img/delas.png" width="70px" height="70px" alt=""></a>
           <li> <a href="#">Home</a> </li>
-          <li> <a href="#equipe">Equipe</a> </li>
           <li> <a href="#sobre">Sobre</a></li>
+          <li> <a href="#equipe">Equipe</a> </li>
+
         </ul>
       </div>
 
@@ -33,7 +34,6 @@
       </div>
     </div>
   </div>
-</div>
 <!--sobre o projeto-->
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -96,8 +96,8 @@
     </div>
 
     <!-- botão scroll topo -->
-    <div class="icone">
-      <a href="#home">
+    <div>
+      <a class="icone" href="#home">
         <i class="fas fa-arrow-up text-dark"></i>
       </a>
     </div>
@@ -121,11 +121,11 @@
 <!--equipe-->
 <div class="row" id="equipe">
 <h1 class="text-center  corTitulo">Conheça nossa equipe</h1>
-<div class="container-fluid d-flex flex-wrap ms-4 mt-5">
+<div class="container-fluid d-flex flex-wrap mt-5">
  
   <!--Gabriela-->
 
-  <div class="col-3">
+  <div class="col-3 ms-4">
     <div class="cardVic fotoGabi">
       <div class="card-body">
         <h3 class="card-title">Gabriela Gomes</h3>
@@ -189,7 +189,7 @@
 
     <!--perfil victoria-->
 
-    <div class="col-3">
+    <div class="col-2">
       <div class="cardVic ">
         <div class="card-body">
           <h2 class="card-title">Victória Alves</h2>
@@ -206,17 +206,17 @@
         </div>
       </div>
     </div>
-    <!-- botão scroll topo -->
-    <div class="icone">
-      <a href="#home">
-        <i class="fas fa-arrow-up text-dark"></i>
-      </a>
-    </div>
-    <!-- botão scroll topo -->
+    
     <!--victoria-->
   </div>
 </div>
-
+<!-- botão scroll topo -->
+<div>
+  <a class="icone2" href="#home">
+    <i class="fas fa-arrow-up text-dark"></i>
+  </a>
+</div>
+<!-- botão scroll topo -->
 <!-- /equipe -->
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -274,8 +274,7 @@
   </div>
 </footer>
 
-
-
+</div>
 <!-- footer -->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />

@@ -2,12 +2,13 @@
 <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 <div class="sidebar">
    <div class="logo-details">
-      <img src="../../assets/img/logo.png" alt="" width="70px" height="70px">
+      <!-- <img src="../../assets/img/logo.png" alt="" width="70px" height="70px"> -->
 
       <!-- logo -->
 
       <div class="logo_name">Delas</div>
-      <i class='bx bx-menu' id="btn"></i>
+      <!-- <i class='bx bx-menu' id="btn"></i> -->
+      <img class="p-5" src="../../assets/img/logo.png" alt="" width="80px" height="80px" class="bx bx-menu" id="btn">
    </div>
    <ul class="nav-list">
       <li>
@@ -26,7 +27,8 @@
       </li>
 
       <li>
-         <a [routerLink]="['/perfil', id]">        
+         <a [routerLink]="['/perfil', id]"> 
+                   
             <i class='bx bx-user' ></i>
             <span class="links_name" >Meu Perfil</span>
          </a>
@@ -81,8 +83,8 @@
             </div>
 
             <div class="col-md-11 p-0 m-0">
-               <button type="button" class="btn btn-outline-danger me-4 my-2">Cancelar</button>
-               <button type="button" class="btn btn-outline-success" (click)='publicar()'>Postar</button>
+               <button type="button" >Cancelar</button>
+               <button type="button"  (click)='publicar()'>Postar</button>
             </div>
 
          </div>
@@ -109,7 +111,7 @@
                   <div class="tab-pane fade active show" id="profile-post">
                      <!-- begin timeline -->
                      <ul class="timeline">
-                        <li>
+                        <li class="p-100">
                            <!-- begin timeline-body -->
                            <div class="timeline-body">
                               <div class="timeline-header">
@@ -123,27 +125,24 @@
                                  <p>
                                     {{item.textoPost}}
                                  </p>
-                                 <img src="{{ item.fotoPost }}" alt="">
+                                 <img class="fotoPost" src="{{item.fotoPost}}" alt="">
                               
                               <div class="timeline-likes">
 
                                  <div class="stats">
-                                    <span class="fa-stack fa-fw stats-icon">
-                                       <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                       <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                    <span class="stats-total">quantidade de likes</span>
+                                   
+                                    <span>{{item.dataPost | date: 'dd/MM/yyyy'}} às {{item.dataPost | date: 'HH:mm'}}</span>
                                  </div>
                               </div>
                               <div class="timeline-footer">
-                                 <a href="" class="m-r-15 text-inverse-lighter"><i
-                                       class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i>Curtir</a>
+                                 <a href="" class="m-r-15 text-inverse-lighter">
+                                    <i class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i>Curtir</a>
                               </div>
 
-                              <div>
-                                 <button [routerLink]="['/postagem-edit',item.id]" type="button" class="btn btn-outline-dark me-4 my-2">Editar </button>
-                                 <a [routerLink]="['/postagem-delete',item.id]"  type="button" class="btn btn-outline-dark">Apagar</a>
-                              </div>
+                              <button [routerLink]="['/postagem-edit',item.id]" type="button">Editar </button>
+                              <button [routerLink]="['/postagem-delete',item.id]"  type="button">Apagar</button>
+                              
+
                               </div>
                            </div>
                      </ul>
