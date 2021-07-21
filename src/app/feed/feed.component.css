@@ -664,9 +664,6 @@ select.form-control:not([size]):not([multiple]) {
     color: #ff5b57!important;
 }
 
-/* Inicio estilização nav bar*/
-
-/* Google Font Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
@@ -911,10 +908,6 @@ select.form-control:not([size]):not([multiple]) {
   margin: 18px
 }
 
-
-
-/* Fim estilização nav bar*/
-
 .formPost{
     max-height: 300px;
     width: 85%;
@@ -922,7 +915,7 @@ select.form-control:not([size]):not([multiple]) {
     border-radius: 15px;
     padding: 50px 50px 50px 50px;
     box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.2);
-    /* position: fixed; */
+    
   }
 
   textarea{
@@ -932,24 +925,6 @@ select.form-control:not([size]):not([multiple]) {
   .quebraLinha{
     width: 700px;
     }
-    
-
-    
-/* button {
-    width: 100px;
-    padding: 3px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 10px;
-    font-weight: bold;
-    border: 2px solid #370A37;
-    background: #370A37;
-    color: #fff;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-  } */
-
 
   button {
     width: 100px;
@@ -957,7 +932,6 @@ select.form-control:not([size]):not([multiple]) {
     text-align: center;
     margin: 20px 10px;
     border-radius: 10px;
-    /* font-weight: bold; */
     border: 2px solid #370A37;
     background: #370A37;
     color: #fff;
@@ -965,11 +939,6 @@ select.form-control:not([size]):not([multiple]) {
     position: relative;
     overflow: hidden;
   }
-
-  /* button:hover span {
-    border: none;
-    width: 100%;
-  } */
   
   button:hover {
   background-color: transparent;
