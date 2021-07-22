@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 body{
     margin-top:20px;
     background:#eee;
@@ -664,7 +666,6 @@ select.form-control:not([size]):not([multiple]) {
     color: #ff5b57!important;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
