@@ -170,7 +170,7 @@ background: #13181c;
   transition: transform ease 250ms;
   border-radius: 0.5rem;
   overflow: hidden;
-  width: 280px;
+  width: 285px;
   height: 350px;
   }
 
@@ -433,12 +433,7 @@ background: transparent;
   height: 350px;
   }
   
-  .fotoPedro{
   
-  background-image: url(https://i.imgur.com/kOuN8qe.jpg);
-  width: 285px;
-  height: 350px;
-  }
 
 .fab{
 

@@ -20,20 +20,20 @@ export class AuthService {
   }
 
   entrar(userLogin: UserLogin): Observable<UserLogin>{
-    return this.http.post<UserLogin>('https://delasbackend.herokuapp.com/usuarios/logar', userLogin)
+    return this.http.post<UserLogin>('https://backdelasnovo.herokuapp.com/usuarios/logar', userLogin)
   }
 
   cadastrar(usuario: Usuario): Observable<Usuario>{
-    return this.http.post<Usuario>('https://delasbackend.herokuapp.com/usuarios/cadastrar', usuario)
+    return this.http.post<Usuario>('https://backdelasnovo.herokuapp.com/usuarios/cadastrar', usuario)
     
   }
   
   getByIdUser(id: number): Observable<Usuario>{
-    return this.http.get<Usuario>(`https://delasbackend.herokuapp.com/usuarios/${id}`, this.token)
+    return this.http.get<Usuario>(`https://backdelasnovo.herokuapp.com/usuarios/${id}`, this.token)
   }
 
   putUsuario(usuario: Usuario): Observable<Usuario>{
-    return this.http.put<Usuario>('https://delasbackend.herokuapp.com/usuarios/alterar', usuario, this.token)
+    return this.http.put<Usuario>('https://backdelasnovo.herokuapp.com/usuarios/alterar', usuario, this.token)
   }
 
   adm(){
