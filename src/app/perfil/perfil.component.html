@@ -63,6 +63,10 @@
                                     <span>{{item.dataPost | date: 'dd/MM/yyyy'}} às {{item.dataPost | date: 'HH:mm'}}</span>
                                  </div>
                               </div>
+
+                              <button [routerLink]="['/postagem-edit',item.id]" type="button">Editar </button>
+                              <button [routerLink]="['/postagem-delete',item.id]"  type="button">Apagar</button>
+                              
                               
 
                               
